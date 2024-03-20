@@ -34,7 +34,7 @@ module.exports = {
 			const categories = {};
 			let msg = "";
 
-			msg += `🅢🅗🅔🅘🅚🅗 🅡🅞🅑🅞🅣 🅒🅜🅓 🅛🅘🅢🅣`; // replace with your name 
+			msg += `🔰 𝐒𝐡𝐞𝐢𝐤𝐡 𝐑𝐨𝐛𝐨𝐭 𝐂𝐌𝐃 𝐋𝐢𝐬𝐭 & 𝐂𝐚𝐭𝐞𝐠𝐨𝐫𝐲 🔰\n\n`; // replace with your name 
 
 			for (const [name, value] of commands) {
 				if (value.config.role > 1 && role < value.config.role) continue;
@@ -51,7 +51,7 @@ module.exports = {
 
 					const names = categories[category].commands.sort();
 					for (let i = 0; i < names.length; i += 3) {
-						const cmds = names.slice(i, i + 3).map((item) => `✰${item}`);
+						const cmds = names.slice(i, i + 3).map((item) => `🖥️${item}`);
 						msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
 					}
 
@@ -60,9 +60,9 @@ module.exports = {
 			});
 
 			const totalCommands = commands.size;
-			msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
-			msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n\n`;
-			msg += `SHEIKH-ROBOT v3.0`; // its not decoy so change it if you want 
+			msg += `\nমোট কমান্ড রয়েছে ${totalCommands} টি\n`;
+			msg += `ব্যবহার করার জন্য লিখুন ${prefix} help তারপর কমান্ডের নাম।\n\n`;
+			msg += `ধন্যবাদ  SHEIKH-ROBOT v3.0 ব্যবহার করার জন্য 🤖`; // its not decoy so change it if you want 
 
 			const helpListImages = [
 				'https://i.imgur.com/xyDcrW3.jpeg',
