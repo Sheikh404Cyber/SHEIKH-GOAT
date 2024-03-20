@@ -35,12 +35,12 @@ module.exports = {
   },
 
   sendInfo: async function (message) {
-    const botName = "➪𝐉𝐎𝐃𝐎✍︎𝐁𝐎𝐓𖤍";
+    const botName = "SHEIKH-ROBOT v3.0";
     const botPrefix = ".";
-    const authorName = "𝐀𝐑𝐈𝐘𝐀𝐍";
-    const authorFB = "https://www.facebook.com/profile.php?id=61556779347707";
-    const authorInsta = "secret";
-    const status = "Pure single";
+    const authorName = "AMIN SHEIKH";
+    const authorFB = "@AMIN.SHEIKH.01";
+    const status = "Single";
+    const authorInsta = "@Amin_Sheikh_01";
 
     const urls = JSON.parse(fs.readFileSync('scripts/cmds/assets/info.json'));
     const link = urls[Math.floor(Math.random() * urls.length)];
@@ -80,7 +80,7 @@ module.exports = {
 ➠Uptime↠ ${uptimeString}
 
 ﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋
-Thanks for using ↠ \➪𝐉𝐎𝐃𝐎✍︎𝐁𝐎𝐓𖤍
+Thanks for using ↠ \➪SHEIKH-ROBOT v3.0
 ﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏`,
       attachment: await global.utils.getStreamFromURL(link)
     });
