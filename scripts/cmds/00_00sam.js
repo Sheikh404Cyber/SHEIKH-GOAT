@@ -2,8 +2,8 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: 'sam',
-    aliases: ["sammi"],
+    name: 'sheikhai',
+    aliases: ["robot"],
     version: '3.0',
     author: 'RUBISH',
     countDown: 0,
@@ -13,7 +13,7 @@ module.exports = {
       vi: 'Chat with simma',
       en: 'Chat with simma'
     },
-    category: 'AI CHAT',
+    category: 'Chat',
     guide: {
       vi: '   {pn} Hi  ',
         
