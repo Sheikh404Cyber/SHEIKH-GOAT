@@ -51,7 +51,7 @@ module.exports = {
 
 					const names = categories[category].commands.sort();
 					for (let i = 0; i < names.length; i += 3) {
-						const cmds = names.slice(i, i + 3).map((item) => `🖥️${item}`);
+						const cmds = names.slice(i, i + 3).map((item) => `📂 ${item}`);
 						msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
 					}
 
@@ -60,9 +60,9 @@ module.exports = {
 			});
 
 			const totalCommands = commands.size;
-			msg += `\nমোট কমান্ড রয়েছে ${totalCommands} টি\n`;
+			msg += `\nমোট কমান্ড রয়েছে ${totalCommands} টি।`;
 			msg += `ব্যবহার করার জন্য লিখুন ${prefix} help তারপর কমান্ডের নাম।\n\n`;
-			msg += `ধন্যবাদ  SHEIKH-ROBOT v3.0 ব্যবহার করার জন্য 🤖`; // its not decoy so change it if you want 
+			msg += `ধন্যবাদ  SHEIKH-ROBOT v3.0 ব্যবহার করার জন্য।`; // its not decoy so change it if you want 
 
 			const helpListImages = [
 				'https://i.imgur.com/xyDcrW3.jpeg',
