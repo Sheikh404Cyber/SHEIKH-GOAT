@@ -5,7 +5,7 @@ module.exports = {
 		version: "1.0",
 		author:"nihan",
 		role: 2,
-		category: "War",
+		category: "Premium",
     shortDescription: "nothing",
 		longDescription: "",
 		guide: {
