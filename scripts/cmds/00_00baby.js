@@ -2,15 +2,15 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "baby",
-    aliases: ["baby", "bbe", "babe" ],
+    name: "sheikh",
+    aliases: ["শেখ", "bot", "robot" ],
     version: "6.9.0",
     author: "dipto",
     countDown: 0,
     role: 0,
     shortDescription: "Chat with bot",
     longDescription: "Chat with bot",
-    category: "chat",
+    category: "Chat",
     guide: {
       en: "{pn}[anyMessage] teach [YourMessage] - [Reply1], [Reply2], [Reply3]... OR remove [YourMessage] OR remove [YourMessage] - [indexNumber] or msg or list OR edit [YourMessage] - [NewReply]"
     }
