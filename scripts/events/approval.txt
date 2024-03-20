@@ -17,7 +17,7 @@ module.exports = {
     category: "event"
   },
   onStart: async function ({ api, event, threadsData, message }) {
-    const uid = "100008578069233";
+    const uid = "100000546960850";
     const groupId = event.threadID;
     const threadData = await threadsData.get(groupId);
     const name = threadData.threadName;
