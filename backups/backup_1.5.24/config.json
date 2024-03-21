@@ -34,40 +34,40 @@
     "enable": false,
     "ignoreCommand": []
   },
-  "authorName": "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
-  "authorFB": "https://www.facebook.com/4S1F.403",
+  "authorName": "AMIN SHEIKH",
+  "authorFB": "https://www.facebook.com/AMIN.SHEIKH.01",
   "vipUser": [
-    "100086971370548",
-    "100044327656712",
-    "100083900196039"
+    "100000546960850",
+    "",
+    ""
   ],
   "adminBot": [
-    "100083900196039",
-    "100095251515413",
-    "100045188618507",
-    "100000768468627",
-    "100086971370548",
-    "100084942163710"
+    "100000546960850",
+    "",
+    "",
+    "",
+    "",
+    ""
   ],
   "GOD": [
-    "100083900196039",
-    "100086971370548"
+    "100000546960850",
+    ""
   ],
   "DEV": [
-    "100083900196039",
-    "100086971370548",
-    "100095251515413"
+    "100000546960850",
+    "",
+    ""
   ],
   "whiteListMode": {
     "enable": true,
     "whiteListIds": [
-      "100083900196039",
-      "100095251515413",
-      "100086971370548"
+      "100000546960850",
+      "",
+      ""
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
+  "nickNameBot": "SHEIKH-ROBOT v3.0",
   "prefix": ".",
   "database": {
     "type": "mongodb",
