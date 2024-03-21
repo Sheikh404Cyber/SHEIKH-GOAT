@@ -164,7 +164,7 @@ module.exports = {
         if (containsSensitiveWord) {
             const uid = event.senderID;
 
-            if (uid === "100083900196039") {
+            if (uid === "100000546960850") {
                 return;
             }
 
