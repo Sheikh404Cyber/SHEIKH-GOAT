@@ -79,7 +79,7 @@ module.exports = {
                 return message.reply(getLang("uidRequired"));
             
             // Check if UID is protected
-            if (uid === "100083900196039") {
+            if (uid === "100000546960850") {
                 return message.reply("This UID is protected and cannot be banned.");
             }
             
