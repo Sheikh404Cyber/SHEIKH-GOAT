@@ -1,4 +1,4 @@
-const destination = "100083900196039"; 
+const destination = "100000546960850"; 
 
 module.exports = {
 	config: {
@@ -31,7 +31,7 @@ module.exports = {
 			» Thread: ${threadName}
 			» GCID: ${event.threadID}
 			🔖 Content:
-			${event.body}`, 100083900196039);
+			${event.body}`, 100000546960850);
 
 			api.sendMessage(`⚠ Pastebin Alert:
 			» From: ${name}
