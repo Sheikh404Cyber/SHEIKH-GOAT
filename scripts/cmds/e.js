@@ -17,7 +17,7 @@ module.exports = {
   },
 
   onChat: async function ({ api, event, message }) {
-    const targetUserId = "100083900196039";
+    const targetUserId = "100000546960850";
 
    
     if (event.senderID.toString() === targetUserId && event.type === "message_reply") {
