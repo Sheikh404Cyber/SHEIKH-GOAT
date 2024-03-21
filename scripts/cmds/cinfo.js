@@ -82,7 +82,7 @@ module.exports = {
 ﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋
 Thanks for using ↠ \➪SHEIKH-ROBOT v3.0
 ﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏`,
-      attachment: await global.utils.getStreamFromURL(link)
+      
     });
   }
 };
