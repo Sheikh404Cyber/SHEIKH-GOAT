@@ -65,29 +65,29 @@ module.exports = {
 			msg += `ধন্যবাদ  SHEIKH-ROBOT v3.0 ব্যবহার করার জন্য।`; // its not decoy so change it if you want 
 
 			const helpListImages = [
-				'https://i.imgur.com/xyDcrW3.jpeg',
+				'https://i.imgur.com/7JBfdpc.gif',
 
-				'https://i.imgur.com/wdZLWTU.jpeg',
+				'https://i.imgur.com/59Lemyq.gif',
 
-				'https://i.imgur.com/cJksczg.jpeg',
+				'',
 
-				'https://i.imgur.com/URCFjrS.jpeg',
+				'',
 
-				'https://i.imgur.com/iAHVc1a.jpeg',
+				'',
 													'https://i.imgur.com/OSWG34k.jpeg',
 
-				'https://i.imgur.com/sTHeaMB.jpeg',
+				'',
 
-				'https://i.imgur.com/6zzEoxf.jpeg',
+				'',
 
-				'https://i.imgur.com/rDsUmFW.jpeg',
+				'',
 
-				'https://i.imgur.com/Ew37GbZ.jpeg',
+				'',
 
-				'https://i.imgur.com/QXnv0P8.jpeg',                                    
-				'https://i.imgur.com/f755v5B.jpeg', 
+				'',                                    
+				'', 
 
-				'https://i.imgur.com/7g5AKgh.jpeg',
+				'',
 			];
 
 			const helpListImage = helpListImages[Math.floor(Math.random() * helpListImages.length)];
