@@ -1,62 +1,70 @@
-const axios = require("axios");
+const axios = require('axios');
+const TEMP_MAIL_URL = 'https://tempmail-rubish.onrender.com/api/gen?apikey=rubish69';
 
 module.exports = {
   config: {
-    name: "mail",
-    version: "1.0",
-    author: "Rishad",
+    name: "tempmail",
+    aliases: ["temp","mail"],
+    version: "2.0",
+    author: "RUBISH",
     countDown: 5,
     role: 0,
-    shortDescription: {
-      en: "retrieve emails and inbox messages",
-      vi: "retrieve emails and inbox messages",
-    },
-    longDescription: {
-      en: "retrieve emails and inbox messages",
-      vi: "retrieve emails and inbox messages",
-    },
-    category: "tool",
+    shortDescription: "Generate temporary email addresses",
+    longDescription: "Generate temporary email addresses for temporary usage.",
+    category: "tools",
     guide: {
-      en: "{pn} gen\n{pn} inbox (email)",
-      vi: "{pn} gen\n{pn} inbox (email)",
+      en: "{pn} [inbox <email>] - Generate a temporary email address or retrieve messages from the inbox.",
     },
+   
   },
 
-  onStart: async function ({ api, args, event }) {
-    const command = args[0];
+  onStart: async ({ api, event, args }) => {
+    try {
+      if (args[0] === 'inbox') {
+        if (!args[1]) {
+          return api.sendMessage("❌ Please provide an email address for the inbox. Example: .tempmail inbox example@wuuvo.com", event.threadID);
+        }
 
-    if (command === "gen") {
-      try {
-        const response = await axios.get("https://for-devs.onrender.com/api/mail/gen?apikey=fuck");
-        const email = response.data.email;
-        return api.sendMessage(`Generated email: ${email}`, event.threadID);
-      } catch (error) {
-        console.error(error);
-        return api.sendMessage("Failed to generate email.", event.threadID);
+        const emailAddress = args[1];
+        const inboxResponse = await axios.get(`https://tempmail-rubish.onrender.com/api/getmessage?tmail=${emailAddress}&apikey=rubish69`);
+        const inboxData = inboxResponse.data;
+
+        if (inboxData.error) {
+          return api.sendMessage(`❌ Error: ${inboxData.error}`, event.threadID);
+        }
+
+        const messages = inboxData.messages;
+
+        let messageText = '📬 MAIL RECEIVED 📬\n\n';
+        for (const message of messages) {
+          messageText += `📩 Sender: ${message.sender}\n\n`;
+          messageText += `👀 Subject: ${message.subject || '👉 NO SUBJECT'}\n\n`;
+          messageText += `📩 Message: ${message.message.replace(/<style([\s\S]*?)<\/style>|<script([\s\S]*?)<\/script>|<\/div>|<div>|<[^>]*>/gi, '')}\n\n`;
+        }
+
+        api.sendMessage(messageText, event.threadID);
+      } else {
+        const tempMailResponse = await axios.get(TEMP_MAIL_URL);
+        const tempMailData = tempMailResponse.data;
+
+        if (tempMailData.error) {
+          return api.sendMessage(`❌ Error: ${tempMailData.error}`, event.threadID);
+        }
+
+        if (!tempMailData.email) {
+          return api.sendMessage(`❌ Error: ${tempMailData.error}`, event.threadID);
+        }
+
+        api.sendMessage(`
+✅ | Successfully Generated Your Temporary Email
+
+Tmail➟ ${tempMailData.email}
+
+___thanks for using me___`, event.threadID);
       }
-    } else if (command === "inbox") {
-      const email = args[1];
-
-      if (!email) {
-        return api.sendMessage("Please provide an email address for the inbox.", event.threadID);
-      }
-
-   try {
-        const inboxResponse = await axios.get(`https://for-devs.onrender.com/api/mail/inbox?email=${email}&apikey=fuck`);
-        const inboxMessages = inboxResponse.data;
-
-        const formattedMessages = inboxMessages.map((message) => {
-          return `${message.date} - From: ${message.sender}\n${message.message}`;
-        });
-
-        return api.sendMessage(`Inbox messages for ${email}:\n\n${formattedMessages.join("\n\n")}\n\nOld messages will be deleted after some time.`, event.threadID);
-
-      } catch (error) {
-        console.error(error);
-        return api.sendMessage("Failed to retrieve inbox messages.", event.threadID);
-      }
-    } else {
-      return api.sendMessage("Invalid command. Use {pn} gen or {pn} inbox (email).", event.threadID);
+    } catch (error) {
+      console.error('Error:', error);
+      api.sendMessage("⭕ | Not found any mail please try again", event.threadID);
     }
-  }
+  },
 };
