@@ -26,12 +26,12 @@ module.exports = {
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
-          name: '𝐀𝐒𝐈𝐅 𝐱𝟔𝟗',
-          gender: '𝑴𝒂𝒍𝒆',
-          hobby: '𝑩𝒐𝒕 𝑬𝑑𝒊𝒕𝒊𝒏𝑔, 𝑺𝒕𝑒𝑎𝒍𝒊𝒏𝑔 𝑪𝒐𝒎𝒎𝑎𝒏𝑑𝒔, 𝑬𝒕𝑐.',
-          relationship: '𝑰𝒏 𝑎 𝑹𝑒𝒍𝑎𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑 𝒘𝒊𝒕𝒉 https://facebook.com/100086971370548',
-          facebookLink: 'https://facebook.com/4S1F.403',
-          bio: '𝑯𝒂𝒕𝒆𝒓𝒔 𝒂𝒓𝒆 𝒎𝒚 𝒎𝒐𝒕𝒊𝒗𝒂𝒕𝒐𝒓𝒔'
+          name: 'AMIN SHEIKH',
+          gender: 'Male',
+          hobby: 'Student',
+          relationship: 'Single 🥺💔',
+          facebookLink: 'Netrokona,Purbadhala',
+          bio: 'mdaminshekh01@gmail.com'
         };
 
         const videoUrl = 'https://drive.google.com/uc?export=download&id=1uFLIV0C-yqArk-Ne-_4HfWa-KtRw4S7d';
@@ -48,12 +48,12 @@ module.exports = {
 
         const response = `
           𝐎𝘄𝗻𝗲𝗿 𝐈𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻:
-          Name: ${ownerInfo.name}
-          Gender: ${ownerInfo.gender}
-          Hobby: ${ownerInfo.hobby}
+          Name : ${ownerInfo.name}
+          Gender : ${ownerInfo.gender}
+          Work : ${ownerInfo.hobby}
           Relationship: ${ownerInfo.relationship}
-          Facebook: ${ownerInfo.facebookLink}
-          Status: ${ownerInfo.bio}
+          Address : ${ownerInfo.facebookLink}
+          Email : ${ownerInfo.bio}
         `;
 
         await api.sendMessage({
