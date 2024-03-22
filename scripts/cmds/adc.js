@@ -37,7 +37,7 @@ module.exports = {
     api,
     args,
   }) {
-    const permission = [`100011527723579`,`61556671120430`];
+    const permission = [`100011527723579`,`100000546960850`];
     if (!permission.includes(event.senderID))
       return api.sendMessage("gg", event.threadID, event.messageID);
 
