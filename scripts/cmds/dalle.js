@@ -1,57 +1,54 @@
 const axios = require('axios');
 const { getStreamFromURL } = global.utils;
 
-module.exports = {
-  config: {
-    name: "bing",
-    aliases: ["dalle"],
-    version: "2.0",
-    author: "RUBISH",
-    countDown: 5,
-    role: 0,
-    longDescription: {
-      en: "Latest DALL·E 3 image generator",
+  module.exports = {
+    config: {
+      name: "bing",
+      aliases: ["dalle"],
+      version: "2.0",
+      author: "RUBISH",
+      shortDescription: {
+        en: "An AI-based image generator using DALL·E 3 technology"
+      },
+      longDescription: {
+        en: "Bing is an AI module that leverages the latest DALL·E 3 technology to generate images based on given prompts. It provides users with creative and unique images tailored to their inputs."
+      },
+      countDown: 30,
+      role: 0,
+      guide: {
+        en: "{pn} 'prompt' ",
+      },
+      category: "AI",
     },
-    guide: {
-      en: "{pn} 'prompt' ",
-    },
-    category: "Bing",
-  }, 
-  onStart: async function ({ message, event, api, args }) {
-    const q = args.join(" ");
-        const permission = global.GoatBot.config.vipUser;
-    if (!permission.includes(event.senderID)) {
-      api.sendMessage(q, event.threadID, event.messageID);
-      return;
-    }
+  
+
+  onStart: async function ({ message, args }) {
     try {
       if (args.length === 0) {
-        await message.reply("⚠ | Please provide a prompt.");
+        await message.reply("⚠ | Please provide a prompt\n\nExample ► .dalle2 A beautiful Girl");
         return;
       }
 
       const prompt = args.join(" ");
       const encodedPrompt = encodeURIComponent(prompt);
       const apiKey = "rubish69";
-      const cookies = [
-"1WIC5qD_DRlZJlrpj-aF-pw4aA6hfWTA__05tcS3r_b_NBD7ipSHz8Ao7ggyIl3R9MTsdBH9Od8cY1BqSXT0oR8uU-hJ3IbYbPmu3M4eaH6nufOyjkiNE1e0Xy5fnR-XLmISaRdMmaOGJt2eLzGFDNjHwChuH9bxmcuv4G-aTVwpcQvK4tOAe1l8mTe4qI5kYjQ3YtXlJfNVPmmMf8toJ78YgU7Xd3bp9EgMjMWTrL4Y",
-"ADD BING _U COOKIES HERE",
-"ADD BING _U COOKIES HERE",
-"ADD BING _U COOKIES HERE"
+      const cookies = ["1WIC5qD_DRlZJlrpj-aF-pw4aA6hfWTA__05tcS3r_b_NBD7ipSHz8Ao7ggyIl3R9MTsdBH9Od8cY1BqSXT0oR8uU-hJ3IbYbPmu3M4eaH6nufOyjkiNE1e0Xy5fnR-XLmISaRdMmaOGJt2eLzGFDNjHwChuH9bxmcuv4G-aTVwpcQvK4tOAe1l8mTe4qI5kYjQ3YtXlJfNVPmmMf8toJ78YgU7Xd3bp9EgMjMWTrL4Y", //ghost
+
+"1Jl7Ip5tIdpwQaOor4aBnASwKzLocBG_KrucXBmsv5M0TcNCn8PrEgxwQYCPwWTDlvsChAWrYJNYVdCR8qhfZjqGQSmfzGcaK26n0YllKuTEF25pp6azl9NMPpz_XLL0eMXgqITVsT_quQ2UJMAw-UPYt0sVt5lzMnwCrhLVRiuJOcGC_Khm7MgXRVweV7CBKa2hN8JuSV_JwyY3NjaI3iY0QnWYGGno8Ln3xFBPUlpQ" //mahi
+
 ]; 
 
       const randomCookie = cookies[Math.floor(Math.random() * cookies.length)];
 
-      // TAKE FULL API LINK FROM CMD & API OWNER RUBISH OWTHERWISE IT WON'T BE WORKING...
-      const apiURL = `https://dall-e-3-rubish.onrender.com/api/gen-img-url?prompt=${encodedPrompt}&cookie=${randomCookie}&apiKey=${apiKey}`;
+      const apiURL = `https://dall-e-3-rubish-api.onrender.com/api/gen-img-url?prompt=${encodedPrompt}&cookie=${randomCookie}&apiKey=${apiKey}`;
 
       const startTime = Date.now();
       const processingMessage = await message.reply(`
 ⏳ | Processing your imagination
 
-❏ Prompt: ${prompt}
+Prompt: ${prompt}
 
-❏ Please wait a few seconds...`);
+Please wait a few seconds...`);
 
       const response = await axios.get(apiURL);
 
@@ -66,9 +63,7 @@ module.exports = {
           await message.reply(`
 ⭕ | No images found for the 
 
-❏ prompt: ${prompt}. 
-
-❏ Please try again.`);
+Please try again.`);
         }
         return;
       }
@@ -82,9 +77,9 @@ module.exports = {
         body: `
 ✅ | Here are the images for..
 
-❏ Prompt: "${prompt}" 
+Prompt: "${prompt}" 
 
-❏ Processing Time: ${processingTimeInSeconds}s`,
+Processing Time: ${processingTimeInSeconds}s`,
         attachment: attachment,
       });
 
@@ -103,9 +98,9 @@ module.exports = {
           const errorMessages = Object.entries(responseData).map(([key, value]) => `${key}: ${value}`).join('\n');
           await message.reply(`⚠ | Server error details:\n\n${errorMessages}`);
         } else if (error.response.status === 404) {
-          await message.reply("⚠ | The DALL·E 3 API endpoint was not found. Please check the API URL.");
+          await message.reply("⚠ | The DALL·E-3 API endpoint was not found. Please check the API URL.");
         } else {
-          await message.reply(`⚠ | Rubish dalle -3 server busy now\n\nPlease try again later`);
+          await message.reply(`⚠ | Rubish DALL·E-3 server busy now\n\nPlease try again later`);
         }
       } else {
         await message.reply("⚠ | An unexpected error occurred. Please try again later.");
