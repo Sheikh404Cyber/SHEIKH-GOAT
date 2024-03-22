@@ -1,62 +1,81 @@
 const axios = require("axios");
-const fs = require("fs-extra");
-const path = require("path");
-const KievRPSSecAuth = "FAB6BBRaTOJILtFsMkpLVWSG6AN6C/svRwNmAAAEgAAACAiUsQgl7RI7OASEn9oXkFUDh33+vBuAD84xId7Ko/lOrsLK24P+U3syLORjfdfBxd/MxJI8EfhFL5wUu+7WgCbiNuUDMpYuC2ymefjrCvXggBiy7aZib0fngKSZV5m9QazMHHPLM+k6Oo2/2ayDm4fH9ZMZxJp+GWKQu9LGzmRKseIIaiFdOIXVGmf72YHT9B9vV7nIU340RDNIMv0Gs7XjYGa0Dm/vEp57m9uo9cF7kL0R8BKaQvwdRX4sbLTxP32/Lv0fEphhyJ1n53xLCha1wCEbf7DZB47G5ZKaO9wZpJa/6a4OpKeMNBQdpv+Hdux+h9k2BDjArf2eeIP7J/EGjsXab37ggeiBJ5WTEiiL22NWp9gPAYsDurbherADIOLpYqrJLzwKvwuBpLHbYbjZvAlcoHzJ2wGKb4XYEGCZAljCIo1dfDvS0P3u2/Bney5LbimrTaqTfgtBgQm7Rx+tc5Hfni21JyXruh1REP9qand0DLQZo32O8MU2rlInA2//M0wiJjmHuIljpgrt+5Skj5dFUb9fTiPzrtfXs5Vad/uhV+DqTjm+PGIDDBXc0SIBb8shXEqKkdf4F7UAQG9oGK9YWLJ7XdR8bho+gZ4nc6206cNnWxf3E8p6NNd3QjfXE9s5K1MAGSINnl+lMZZz1RLzD0U3HcoIqEYHf7tK2/bM9yChiW6MR0KJWMPihfClnAw/WAdmqeCYzGhYjXUBJDU0zR/VpaxB6BhaBfzWuJQtNQXsFiako4wDW1qHGCqRuj8m07zxHCcrwaOCR/UqJqvbLt/iG/kmhA24ef0PexCXR5etc6NbXhKNdlW6WoYXVgNDst0Lokmifb2kTII6Ut6KQSt7UrofSKQUdnjfB/bfDwM4Jy2rErmtf5uOMmLlp4ftxbv4wF9I9XWL0pi0QSscwBbXzbZTuYInttlDpwGyNgchlGiEFFID2LgnVCr3rC94Uw/i3HPgX9yeE1BPr13mMqkZKGhXl0u6ErBffuJ/C3NLqJnuVbir90r7WYE2Wj5qHK+4349VY+5wPCmvm8xDor9kK1TXzGd/aRyY3JDp8uoYs7ub95q6PbJ1FtUCrz1RQG3FznJVy8w+bEszxu15hlGAVLevkNqXIBmyt4vXn/scRhSdz7TD/tx3ZJvXo3iEDEJkVULAASHy0/0/6PfMuMIABNCq+DtHCoXyLKMBMQKy9RYdkh1dfcU7w2dHUB67wlPvp1+56gYnXD0vKltzMmuWVbhDROOpD640PKfx24mLg0akOliEfAl/UB/NWEOXvH0F89gaBEbgmsaBxR00F1zK3N/e1q6+OMjkQvDc2OIPqHXM7HZUyWg+u3qQXofZXn9hoKC00P3v59ggy9y+8o4vxi+3ijInygW9oEiQ7I9OPTn9N8RuQjpEktSCyQAJR7gfp8a8nhGpPPRyUSsJPXZ3ni2QMv18BeWsbP0UAGupBpVGCl83Ku5XQMqPmKC6kqxg";
-const _U = "1eFvUf4-pOg-XChs9wiE5soT5-4lVG_U8h9MKL_Cp9d5oSGOw4dTvXM6Ejk7v4U5-J5Bjljw0UzJe5r4-Zbyw6Lbj6LsSE06QzvwjhPvWC4x87QtsMwLFHR-vGZAqkvKvNEfmTw_hDbExtUGN9GHqqRjsvHGLs5UiG2cLI37k-sBilZv4jBzmZmm707U97Yfdcat5Z34zBS-3TTqmGbsS-g";
-
+const {
+  getStreamFromURL
+} = global.utils;
 module.exports = {
-  config: {
-    name: "dalle3",
-    aliases: ["bing2"],
-    version: "1.0.2",
-    author: "Samir Œ",
-    role: 1,
-    countDown: 5,
-    shortDescription: {
-      en: "dalle image generator"
+  'config': {
+    'name': "bing2",
+    'aliases': ["dalle2", "dalle3"],
+    'version': '',
+    'author': "RUBISH",
+    'countDown': 0x3c,
+    'role': 0x0,
+    'longDescription': {
+      'en': "Latest DALL·E 3 image generator"
     },
-    longDescription: {
-      en: ""
+    'guide': {
+      'en': "{pn} 'prompt' "
     },
-    category: "Bing",
-    guide: {
-      en: "{pn} <search query> -<number of images>"
-    }
+    'category': 'AI'
   },
-
-  onStart: async function ({ api, event, args }) {
-    const keySearch = args.join(" ");
-    const indexOfHyphen = keySearch.indexOf('-');
-    const keySearchs = indexOfHyphen !== -1 ? keySearch.substr(0, indexOfHyphen).trim() : keySearch.trim();
-    const numberSearch = parseInt(keySearch.split("-").pop().trim()) || 4;
-
+  'onStart': async function ({
+    message: _0x4fd165,
+    args: _0x150cc7
+  }) {
     try {
-      const res = await axios.get(`https://api-dalle-gen.onrender.com/dalle3?auth_cookie_U=${_U}&auth_cookie_KievRPSSecAuth=${KievRPSSecAuth}&prompt=${encodeURIComponent(keySearchs)}`);
-      const data = res.data.results.images;
-
-      if (!data || data.length === 0) {
-        api.sendMessage("❌| No images found for the provided query.", event.threadID, event.messageID);
+      if (_0x150cc7.length === 0) {
+        await _0x4fd165.reply("Please provide a prompt.");
         return;
       }
-
-      const imgData = [];
-      for (let i = 0; i < Math.min(numberSearch, data.length); i++) {
-        const imgResponse = await axios.get(data[i].url, { responseType: 'arraybuffer' });
-        const imgPath = path.join(__dirname, 'cache', `${i + 1}.jpg`);
-        await fs.outputFile(imgPath, imgResponse.data);
-        imgData.push(fs.createReadStream(imgPath));
+      const _0x398c74 = _0x150cc7.join(" ");
+      const _0x29d214 = encodeURIComponent(_0x398c74);
+      const _0x168b23 = "https://dalle-3-rubish.api-host.repl.co/api/gen-img-url?prompt=" + _0x29d214 + "&apikey=" + "rubish69";
+      const _0x51997b = Date.now();
+      const _0x146640 = await _0x4fd165.reply("\n  ⏳ | Processing your imagination\n  \n  Prompt: " + _0x398c74 + "\n  \n  Please wait a few seconds...");
+      const _0x2ba5f2 = await axios.get(_0x168b23);
+      const _0x5cfb8a = Date.now();
+      const _0x2247b2 = ((_0x5cfb8a - _0x51997b) / 1000).toFixed(2);
+      const _0x16e740 = _0x2ba5f2.data;
+      if (!_0x16e740.imageLinks || _0x16e740.imageLinks.length === 0) {
+        if (_0x16e740.errorMessage === "Invalid API key") {
+          await _0x4fd165.reply("⚠️ | Invalid API key. Please check your API key and try again.");
+        } else {
+          await _0x4fd165.reply("No images found for the prompt: " + _0x398c74 + ". Please try again.");
+        }
+        return;
       }
-
-      await api.sendMessage({
-        attachment: imgData,
-        body: "❏ Here's your generated image"
-      }, event.threadID, event.messageID);
-
-    } catch (error) {
-      console.error(error);
-      api.sendMessage("An error occurred while processing the command.", event.threadID, event.messageID);
-    } finally {
-      await fs.remove(path.join(__dirname, 'cache'));
+      const _0x23fd0c = await Promise.all(_0x16e740.imageLinks.map(async _0x48be91 => {
+        const _0x4bb3d2 = await getStreamFromURL(_0x48be91);
+        return _0x4bb3d2;
+      }));
+      await _0x4fd165.reply({
+        'body': "\n  ✅ | Here are the images for..\n  \n  Prompt: \"" + _0x398c74 + "\" \n  \n  Processing Time: " + _0x2247b2 + 's',
+        'attachment': _0x23fd0c
+      });
+      _0x4fd165.unsend((await _0x146640).messageID);
+    } catch (_0x5039f9) {
+      console.error(_0x5039f9);
+      if (_0x5039f9.response && _0x5039f9.response.status === 401) {
+        await _0x4fd165.reply("⚠️ | Unauthorized your API key \n\nContact with Rubish for new apikey");
+      } else {
+        if (_0x5039f9.response && _0x5039f9.response.data) {
+          const _0x307626 = _0x5039f9.response.data;
+          if (_0x307626.errorMessage === "Pending") {
+            await _0x4fd165.reply("⚠️ | This prompt has been blocked by Bing. Please try again with another prompt.");
+          } else {
+            if (typeof _0x307626 === "object") {
+              const _0x399a55 = Object.entries(_0x307626).map(([_0x49b39d, _0x30edce]) => _0x49b39d + ": " + _0x30edce).join("\n");
+              await _0x4fd165.reply("⚠️ | Server error details:\n\n" + _0x399a55);
+            } else if (_0x5039f9.response.status === 404) {
+              await _0x4fd165.reply("⚠️ | The DALL·E 3 API endpoint was not found. Please check the API URL.");
+            } else {
+              await _0x4fd165.reply("⚠️ | Rubish dalle -3 server busy now\n\nPlease try again later ");
+            }
+          }
+        } else {
+          await _0x4fd165.reply("⚠️ | An unexpected error occurred. Please try again later.");
+        }
+      }
     }
   }
 };
