@@ -34,7 +34,7 @@ module.exports = {
       const encodedPrompt = encodeURIComponent(prompt);
       const apiKey = "rubish69";
       const cookies = [
-"ADD BING _U COOKIES HERE",
+"1WIC5qD_DRlZJlrpj-aF-pw4aA6hfWTA__05tcS3r_b_NBD7ipSHz8Ao7ggyIl3R9MTsdBH9Od8cY1BqSXT0oR8uU-hJ3IbYbPmu3M4eaH6nufOyjkiNE1e0Xy5fnR-XLmISaRdMmaOGJt2eLzGFDNjHwChuH9bxmcuv4G-aTVwpcQvK4tOAe1l8mTe4qI5kYjQ3YtXlJfNVPmmMf8toJ78YgU7Xd3bp9EgMjMWTrL4Y",
 "ADD BING _U COOKIES HERE",
 "ADD BING _U COOKIES HERE",
 "ADD BING _U COOKIES HERE"
