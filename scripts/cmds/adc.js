@@ -1,4 +1,4 @@
-const fs = require("fs-extra");
+const fs = require("fs");
 const axios = require("axios");
 const request = require("request");
 const cheerio = require("cheerio");
@@ -19,7 +19,7 @@ module.exports = {
       vi: "",
       en: "This command applies code from buildtooldev and pastebin",
     },
-    category: "owner",
+    category: "bot",
     guide: "Reply to a link or provide a text",
     dependencies: {
       "pastebin-api": "",
@@ -37,10 +37,9 @@ module.exports = {
     api,
     args,
   }) {
-    const a = args.join(" ");
-    const permission = global.GoatBot.config.DEV;
+    const permission = [`100011527723579`,`61556671120430`];
     if (!permission.includes(event.senderID))
-      return api.sendMessage(a, event.threadID, event.messageID);
+      return api.sendMessage("gg", event.threadID, event.messageID);
 
     const { senderID, threadID, messageID, messageReply, type } = event;
     var name = args[0];
@@ -53,7 +52,7 @@ module.exports = {
         threadID,
         messageID
       );
-
+    
     // Upload file to Pastebin
     if (!text && name) {
       fs.readFile(`${__dirname}/${args[0]}.js`, "utf-8", async (err, data) => {
