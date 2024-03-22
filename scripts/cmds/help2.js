@@ -51,7 +51,7 @@ module.exports = {
 
 					const names = categories[category].commands.sort();
 					for (let i = 0; i < names.length; i += 3) {
-						const cmds = names.slice(i, i + 3).map((item) => `📂 ${item}`);
+						const cmds = names.slice(i, i + 3).map((item) => `➲ ${item}`);
 						msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
 					}
 
@@ -69,25 +69,25 @@ module.exports = {
 
 				'https://i.imgur.com/59Lemyq.gif',
 
-				'',
+				'https://i.imgur.com/Mqk9Eky.gif',
 
-				'',
+				'https://i.imgur.com/p6bCwv1.gif',
 
-				'',
+				'https://i.imgur.com/Mqk9Eky.gif',
 													'https://i.imgur.com/OSWG34k.jpeg',
 
-				'',
+				'https://i.imgur.com/p6bCwv1.gif',
 
-				'',
+				'https://i.imgur.com/Mqk9Eky.gif',
 
-				'',
+				'https://i.imgur.com/p6bCwv1.gif',
 
-				'',
+				'https://i.imgur.com/Mqk9Eky.gif',
 
-				'',                                    
-				'', 
+				'https://i.imgur.com/p6bCwv1.gif',                                    
+				'https://i.imgur.com/Mqk9Eky.gif', 
 
-				'',
+				'https://i.imgur.com/p6bCwv1.gif',
 			];
 
 			const helpListImage = helpListImages[Math.floor(Math.random() * helpListImages.length)];
