@@ -7,14 +7,14 @@ module.exports = {
   sentVideos: [],
 
   config: {
-    name: "ac",
+    name: "HD",
     version: "2.0",
     role: 0,
-    author: "404",
+    author: "",
     cooldowns: 5,
-    shortDescription: "",
+    shortDescription: "Random 4k Video",
     longDescription: "get  edits videos from YouTube",
-    category: "𝗩𝗜𝗗𝗘𝗢",
+    category: "MEDIA",
     dependencies: {
       "fs-extra": "",
       "axios": "",
