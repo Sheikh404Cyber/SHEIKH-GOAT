@@ -1,123 +1,192 @@
-const axios = require("axios");
+const axios = require('axios');
+const fs = require('fs-extra');
+const path = require('path');
+const ytdl = require("@neoxr/ytdl-core");
+const yts = require("yt-search");
 
-function formatFont(text) {
-  const fontMapping = {
-    a: "𝚊", b: "𝚋", c: "𝚌", d: "𝚍", e: "𝚎", f: "𝚏", g: "𝚐", h: "𝚑", i: "𝚒", j: "𝚓", k: "𝚔", l: "𝚕", m: "𝚖",
-    n: "𝚗", o: "𝚘", p: "𝚙", q: "𝚚", r: "𝚛", s: "𝚜", t: "𝚝", u: "𝚞", v: "𝚟", w: "𝚠", x: "𝚡", y: "𝚢", z: "𝚣",
-    A: "𝙰", B: "𝙱", C: "𝙲", D: "𝙳", E: "𝙴", F: "𝙵", G: "𝙶", H: "𝙷", I: "𝙸", J: "𝙹", K: "𝙺", L: "𝙻", M: "𝙼",
-    N: "𝙽", O: "𝙾", P: "𝙿", Q: "𝚀", R: "𝚁", S: "𝚂", T: "𝚃", U: "𝚄", V: "𝚅", W: "𝚆", X: "𝚇", Y: "𝚈", Z: "𝚉"
-  };
-
-  let formattedText = "";
-  for (const char of text) {
-    if (char in fontMapping) {
-      formattedText += fontMapping[char];
-    } else {
-      formattedText += char;
-    }
-  }
-
-  return formattedText;
-}
-
-async function convertVoiceToText(audioUrl, api, event) {
-  if (!audioUrl) {
-    api.sendMessage("🔴 Missing audio URL.", event.threadID, event.messageID);
-    return;
-  }
-
+async function lado(api, event, args, message) {
   try {
-    api.sendMessage("🔊 | 𝖬𝖾𝗍𝖺-𝖠𝖨 𝖼𝗈𝗇𝗏𝖾𝗋𝗍𝂾𝗇𝗀 𝖺𝗎𝖽𝗂𝗈, 𝗉𝗅𝖾𝖺𝗌𝖾 𝗐𝖺𝗂𝗍...", event.threadID);
+    const songName = args.join(" ");
+    const searchResults = await yts(songName);
 
-    const response = await axios.get(`https://hazeyy-apis-combine.kyrinwu.repl.co/api/try/voice2text?url=${encodeURIComponent(audioUrl)}`);
-    const text = response.data.transcription;
-
-    if (text) {
-      const formattedText = formatFont(text);
-      api.sendMessage(`🎓 𝗠𝗲𝘁𝗮 ( 𝗔𝗜 ) 𝗖𝗼𝗻𝘃𝗲𝗿𝘁𝗲𝗱 𝗧𝗲𝘅𝘁\n\n ${formattedText}`, event.threadID, event.messageID);
-    } else {
-      api.sendMessage("🔴 𝖴𝗇𝖺𝖻𝗅𝖾 𝗍𝗈 𝖼𝗈𝗇𝗏𝖾𝗋𝗍 𝖠𝗎𝖾𝗂𝗈.", event.threadID, event.messageID);
+    if (!searchResults.videos.length) {
+      message.reply("No song found for the given query.");
+      return;
     }
+
+    const video = searchResults.videos[0];
+    const videoUrl = video.url;
+    const stream = ytdl(videoUrl, { filter: "audioonly" });
+    const fileName = `music.mp3`; 
+    const filePath = path.join(__dirname, "tmp", fileName);
+
+    stream.pipe(fs.createWriteStream(filePath));
+
+    stream.on('response', () => {
+      console.info('[DOWNLOADER]', 'Starting download now!');
+    });
+
+    stream.on('info', (info) => {
+      console.info('[DOWNLOADER]', `Downloading ${info.videoDetails.title} by ${info.videoDetails.author.name}`);
+    });
+
+    stream.on('end', () => {
+      const audioStream = fs.createReadStream(filePath);
+      message.reply({ attachment: audioStream });
+      api.setMessageReaction("✅", event.messageID, () => {}, true);
+    });
   } catch (error) {
-    console.error("🔴 𝖠𝗇 𝖾𝗋𝗋𝗈𝗋 𝗈𝖼𝖼𝗎𝗋𝖾𝖽 𝗐𝗁𝗂𝗅𝖾 𝖼𝗈𝗇𝗏𝖾𝗋𝗍𝂾𝗇𝗀 𝖺𝗎𝖽𝗂𝗈:", error);
-    api.sendMessage("🔴 𝖠𝗇 𝖾𝗋𝗋𝗈𝗋 𝗈𝖼𝖼𝗎𝗋𝖾𝖽 𝗐𝗁𝗂𝗅𝖾 𝖼𝗈𝗇𝗏𝖾𝗋𝗍𝂾𝗇𝗀 𝖺𝗎𝖽𝗂𝗈:", event.threadID, event.messageID);
+    console.error("Error:", error);
+    message.reply("Sorry, an error occurred while processing your request.");
   }
 }
 
-async function convertImageToCaption(imageURL, api, event) {
-  if (!imageURL) {
-    api.sendMessage("🔴 Missing image URL.", event.threadID, event.messageID);
-    return;
-  }
-
+async function kshitiz(api, event, args, message) {
   try {
-    api.sendMessage("📷 | 𝖬𝖾𝗍𝖺-𝖠𝖨 𝗋𝖾𝖼𝗈𝗀𝗇𝗂𝗍𝗂𝗈𝗇𝗂𝗇𝗀 𝗂𝗆𝖺𝗀𝖾, 𝗉𝗅𝖾𝖺𝗌𝖾 𝗐𝖺𝗂𝗍...", event.threadID);
+    const query = args.join(" ");
+    const searchResults = await yts(query);
 
-    const response = await axios.get(`https://hazeyy-apis-combine.kyrinwu.repl.co/api/image2text/new?image=${encodeURIComponent(imageURL)}`);
-    const caption = response.data.caption.generated_text;
-
-    if (caption) {
-      const formattedCaption = formatFont(caption);
-      api.sendMessage(`📷 𝗠𝗲𝘁𝗮 ( 𝗔𝗜 ) 𝗜𝗺𝗮𝗴𝗲 𝗿𝗲𝗰𝗼𝗴𝗇𝗶𝘁𝗶𝗼𝗻\n\n ${formattedCaption}`, event.threadID, event.messageID);
-    } else {
-      api.sendMessage("🔴 𝖥𝖺𝗂𝗅𝖾𝖽 𝗍𝗈 𝖼𝗈𝗇𝗏𝖾𝗋𝗍 𝗍𝗁𝖾 𝗂𝗆𝖺𝗀𝖾.", event.threadID, event.messageID);
+    if (!searchResults.videos.length) {
+      message.reply("No videos found for the given query.");
+      return;
     }
+
+    const video = searchResults.videos[0];
+    const videoUrl = video.url;
+    const stream = ytdl(videoUrl, { filter: "audioandvideo" }); 
+    const fileName = `music.mp4`;
+    const filePath = path.join(__dirname, "tmp", fileName);
+
+    stream.pipe(fs.createWriteStream(filePath));
+
+    stream.on('response', () => {
+      console.info('[DOWNLOADER]', 'Starting download now!');
+    });
+
+    stream.on('info', (info) => {
+      console.info('[DOWNLOADER]', `Downloading ${info.videoDetails.title} by ${info.videoDetails.author.name}`);
+    });
+
+    stream.on('end', () => {
+      const videoStream = fs.createReadStream(filePath);
+      message.reply({ attachment: videoStream });
+      api.setMessageReaction("✅", event.messageID, () => {}, true);
+    });
   } catch (error) {
-    console.error("🔴 𝖤𝗋𝗋𝗋𝗈𝗋 𝖨𝗆𝖺𝗀𝖾 𝖱𝖾𝖺𝖼𝗈𝗀𝗇𝗂𝗍𝗂𝗈𝗇:", error);
-    api.sendMessage("🔴 𝖠𝗇 𝖾𝗋𝗋𝗈𝗋 𝖨𝗆𝖺𝗀𝖾 𝖱𝖾𝖖𝗈𝗀𝗇𝗂𝗍𝗂𝗈𝗇", event.threadID, event.messageID);
+    console.error(error);
+    message.reply("Sorry, an error occurred while processing your request.");
+  }
+}
+
+
+const a = {
+  name: "gpt5",
+  aliases: ["chatgpt"],
+  version: "3.0",
+  author: "vex_kshitiz",
+  countDown: 5,
+  role: 0,
+  longDescription: "Chat with GPT-4",
+  category: "ai",
+  guide: {
+    en: "{p}gpt {prompt}"
+  }
+};
+
+async function b(c, d, e, f) {
+  try {
+    const g = await axios.get(`https://gpt4-phi-rose.vercel.app/kshitiz?prompt=${encodeURIComponent(c)}&uid=${d}&apikey=kshitiz`);
+    return g.data.gpt4;
+  } catch (h) {
+    throw h;
+  }
+}
+
+async function i(c) {
+  try {
+    const j = await axios.get(`https://ai-tools.replit.app/sdxl?prompt=${encodeURIComponent(c)}&styles=7`, { responseType: 'arraybuffer' });
+    return j.data;
+  } catch (k) {
+    throw k;
+  }
+}
+
+async function describeImage(prompt, photoUrl) {
+  try {
+    const url = `https://sandipbaruwal.onrender.com/gemini2?prompt=${encodeURIComponent(prompt)}&url=${encodeURIComponent(photoUrl)}`;
+    const response = await axios.get(url);
+    return response.data.answer;
+  } catch (error) {
+    throw error;
+  }
+}
+
+async function l({ api, message, event, args }) {
+  try {
+    const m = event.senderID;
+    const n = args.join(" ").trim();
+    const draw = args[0].toLowerCase() === "draw";
+    const prompt = args[0].toLowerCase() === "prompt";
+    const sendTikTok = args[0].toLowerCase() === "send";
+    const sing = args[0].toLowerCase() === "sing";
+
+    if (!n) {
+      return message.reply("Please provide a prompt.");
+    }
+
+    if (draw) {
+      await drawImage(message, n);
+    } else if (prompt) {
+      if (event.messageReply && event.messageReply.attachments && event.messageReply.attachments.length > 0) {
+        const photoUrl = event.messageReply.attachments[0].url;
+        const description = await describeImage(n, photoUrl);
+        message.reply(`Description: ${description}`);
+      } else {
+        return message.reply("Please reply to an image to describe it.");
+        }
+    } else if (sendTikTok) {
+      await kshitiz(api, event, args.slice(1), message); 
+    } else if (sing) {
+      await lado(api, event, args.slice(1), message); 
+    } else {
+      const q = await b(n, m);
+      message.reply(q, (r, s) => {
+        global.GoatBot.onReply.set(s.messageID, {
+          commandName: a.name,
+          uid: m 
+        });
+      });
+    }
+  } catch (t) {
+    console.error("Error:", t.message);
+    message.reply("An error occurred while processing the request.");
+  }
+}
+
+async function drawImage(message, prompt) {
+  try {
+    const u = await i(prompt);
+
+    const v = path.join(__dirname, 'cache', `image_${Date.now()}.png`);
+    fs.writeFileSync(v, u);
+
+    message.reply({
+      body: "Generated image:",
+      attachment: fs.createReadStream(v)
+    });
+  } catch (w) {
+    console.error("Error:", w.message);
+    message.reply("An error occurred while processing the request.");
   }
 }
 
 module.exports = {
-  config: {
-    name: "meta",
-    author: "Hazeyy/kira", // hindi ito collab, ako kasi nag convert :>
-    version: "69",
-    cooldowns: 5,
-    role: 0,
-    shortDescription: {
-      en: "meta AI voice to image classification"
-    },
-    longDescription: {
-      en: "meta AI voice to image classification"
-    },
-    category: "AI 🤖",
-    guide: {
-      en: "{p}{n} [query]"
-    }
+  config: a,
+  handleCommand: l,
+  onStart: function ({ api, message, event, args }) {
+    return l({ api, message, event, args });
   },
-onStart: async function ({ api, event }) {
-    // Your code here
-    if (event.type === "message_reply") {
-      if (event.messageReply.attachments[0]) {
-        const attachment = event.messageReply.attachments[0];
-
-        if (attachment.type === "audio") {
-          const audioUrl = attachment.url;
-          convertVoiceToText(audioUrl, api, event);
-          return;
-        } else if (attachment.type === "photo") {
-          const imageURL = attachment.url;
-          convertImageToCaption(imageURL, api, event);
-          return;
-        }
-      }
-    }
-
-    const inputText = event.body;
-    api.sendMessage("🗨️ | 𝖬𝖾𝗍𝖺-𝖠𝖨 𝗂𝗌 𝗍𝗁𝗂𝗇𝗄𝗂𝗇𝗀 𝗉𝗅𝖾𝖺𝗌𝖾 𝗐𝖺𝗂𝗍...", event.threadID);
-
-    try {
-      const response = await axios.get(`https://hazeyy-apis-combine.kyrinwu.repl.co/api/llamav3/chat?prompt=${inputText}`);
-      if (response.status === 200) {
-        const generatedText = response.data.response;
-        const formattedText = formatFont(generatedText);
-        api.sendMessage(`🎓 𝗠𝗲𝘁𝗮 ( 𝗔𝗜 )\n\n${formattedText}`, event.threadID);
-      } else {
-        console.error("🔴 𝖤𝗋𝗋𝗈𝗋 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝗂𝗇𝗀 𝗋𝖾𝖺𝖼𝗈𝗀𝗇𝗂𝗍𝗂𝗈𝗇 𝖿𝗋𝗈𝗆 𝖬𝖾𝗍𝖺-𝖠𝖨 𝖠𝖯𝖨.");
-      }
-    } catch (error) {
-      console.error("🔴 𝖤𝗋𝗋𝗋𝗈𝗋:", error);
-    }
+  onReply: function ({ api, message, event, args }) {
+    return l({ api, message, event, args });
   }
 };
