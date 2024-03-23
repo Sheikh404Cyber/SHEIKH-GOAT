@@ -8,7 +8,7 @@ module.exports.config ={
   role: 0,
   author: "Dipto",
   longDescription: "Displays album options for selection.",
-  category: "Media",
+  category: "MEDIA",
   countDown: 5,
   guide: {
       en: "{p}{n} or add [cartoon/photo/lofi/sad/islamic/funny/horny/anime]"
@@ -42,7 +42,7 @@ module.exports.onStart = async function ({ api, event, args}) {
     link: albumOptions
   })},event.messageID);
 }else if (args[0] === "2"){
-    { api.setMessageReaction("😘", event.messageID, (err) => {}, true);
+    { api.setMessageReaction("🥰", event.messageID, (err) => {}, true);
     }
   const albumOptions = [
     "𝗔𝗲𝘀𝘁𝗵𝗲𝘁𝗶𝗰 𝗩𝗶𝗱𝗲𝗼",
@@ -69,7 +69,7 @@ module.exports.onStart = async function ({ api, event, args}) {
   }
 //------------Video Add--------------//
 const validCommands = ['cartoon', 'photo', 'lofi', 'sad', 'islamic','funny','horny','anime','love','lyrics','sigma','photo','aesthetic','cat','flower','ff','sex','girl','football',"friend",'cricket'];
-  { api.setMessageReaction("👀", event.messageID, (err) => {}, true);
+  { api.setMessageReaction("😍", event.messageID, (err) => {}, true);
   }
   if (args[0] === 'list'){
  try {
@@ -183,76 +183,76 @@ module.exports.onReply = async function ({ api, event, Reply }) {
   let cp;
   if (reply === 1) {
     query = "funny";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗙𝘂𝗻𝗻𝘆 𝘃𝗶𝗱𝗲𝗼 <🤣";
+    cp = "Sheikh Robot Funny Video <🤣";
   } else if (reply === 2) {
     query = "islamic";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗜𝘀𝗹𝗮𝗺𝗶𝗰 𝘃𝗶𝗱𝗲𝗼 <😇";
+    cp = "Sheikh Robot Islamic Video <😇";
   }else if (reply === 3) {
       query = "sad";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗦𝗮𝗱 𝘃𝗶𝗱𝗲𝗼 <🥺";
+    cp = "Sheikh Robot Sad Video <🥺";
     }else if (reply === 4) {
       query = "anime";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗮𝗻𝗶𝗺 𝘃𝗶𝗱𝗲𝗼 <😘";
+    cp = "Sheikh Robot Anime Video <😘";
     }else if (reply === 5) {
       query = "video";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗖𝗮𝗿𝘁𝗼𝗼𝗻 𝘃𝗶𝗱𝗲𝗼 <😇";
+    cp = "Sheikh Robot Video <😇";
     }else if (reply === 6) {
       query = "lofi";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗟𝗼𝗳𝗶 𝘃𝗶𝗱𝗲𝗼 <😇";
+    cp = "Sheikh Robot Lofi Video <😇";
     }
     else if (reply === 7 && event.senderID === admin) {
     query = "horny";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗛𝗼𝗿𝗻𝘆 𝘃𝗶𝗱𝗲𝗼 <🥵";
+    cp = "Sheikh Robot Horny Video <🥵";
     }
     else if (reply === 8) {
     query = "love";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗟𝗼𝘃𝗲 𝘃𝗶𝗱𝗲𝗼 <😍";
+    cp = "Sheikh Robot Love Video <😍";
     }
     else if (reply === 9) {
     query = "flower";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗙𝗹𝗼𝘄𝗲𝗿 𝘃𝗶𝗱𝗲𝗼 <🌷";
+    cp = "Sheikh Robot Flower Video <🌷";
     }
     else if (reply === 10) {
     query = "photo";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗥𝗮𝗻𝗱𝗼𝗺 𝗣𝗵𝗼𝘁𝗼 <😙";
+    cp = "Sheikh Robot Random Pic <😙";
       }
     else if (reply === 11) {
     query = "aesthetic";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗔𝗲𝘀𝘁𝗵𝗲𝘁𝗶𝗰 𝗩𝗶𝗱𝗲𝗼 <😙";
+    cp = "Sheikh Robot Aesthetic Video <😙";
     }
     else if (reply === 12) {
     query = "sigma";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗦𝗶𝗴𝗺𝗮 𝘃𝗶𝗱𝗲𝗼 <🐤";
+    cp = "Sheikh Robot Sigma Video <🗿";
     }
     else if (reply === 13) {
     query = "lyrics";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗟𝘆𝗿𝗶𝗰𝘀 𝘃𝗶𝗱𝗲𝗼 <🥰";
+    cp = "Sheikh Robot Lyrics Video <🥰";
     }
     else if (reply === 14) {
     query = "cat";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗖𝗮𝘁 𝗩𝗶𝗱𝗲𝗼 <😙";
+    cp = "Sheikh Robot Cat Video <😙";
     }
   else if (reply === 15 && event.senderID === admin) {
     query = "sex";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗦𝗲𝘅 𝘃𝗶𝗱𝗲𝗼 <😙";
+    cp = "Sheikh Robot Sex Video <😙";
   }
   else if (reply === 16) {
       query = "ff";
-      cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗙𝗿𝗲𝗲 𝗙𝗶𝗿𝗲 𝗩𝗶𝗱𝗲𝗼 <😙";
+      cp = "Sheikh Robot FreeFire Video <😙";
   }
     else if (reply === 17) {
     query = "football";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗙𝗼𝗼𝘁𝗯𝗮𝗹𝗹 𝘃𝗶𝗱𝗲𝗼<😙";
+    cp = "Sheikh Robot Football Video <😙";
     }
     else if (reply === 18) {
     query = "girl";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗚𝗶𝗿𝗹 𝘃𝗶𝗱𝗲𝗼<😙";
+    cp = "Sheikh Robot Girl Video<😙";
     }else if (reply === 19) {
     query = "friend";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗙𝗿𝗶𝗲𝗻𝗱𝘀 𝘃𝗶𝗱𝗲𝗼<😙";
+    cp = "Sheikh Robot Friend Video<😙";
     }else if (reply === 20) {
-      query = "friend";
-    cp = "𝗡𝗮𝘄 𝗕𝗮𝗯𝘆 𝗖𝗿𝗶𝗰𝗸𝗲𝘁 𝘃𝗶𝗱𝗲𝗼<😙";
+      query = "cricket";
+    cp = "Sheikh Robot Cricket Video <😙";
     }
   try {
     const res = await axios.get(`https://noobs-apihouse.onrender.com/dipto/album?type=${query}`);
