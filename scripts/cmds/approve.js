@@ -2,14 +2,14 @@ const fs = require('fs');
 
 module.exports = {
  config: {
- name: "approve2",
+ name: "approve",
  version: "1.0",
  author: "Loufi",
  countDown: 5,
  role: 2,
  shortDescription: "",
 		longDescription: "",
- category: "admin",
+ category: "BOT-ADMIN",
  guide: {
  en: "{pn} [add|del|list]",
  vi: "Để sử dụng lệnh này, hãy gõ /approve [add/delete] [thread ID]"
