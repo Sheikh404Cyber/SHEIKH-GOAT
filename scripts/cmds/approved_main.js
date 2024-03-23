@@ -7,7 +7,7 @@ module.exports = {
     version: "1.0",
     author: "Samuel Kâñèñgeè",
     countDown: 5,
-    category: "owner",
+    category: "BOT-ADMIN",
     role: 2,
     guide: {
       en: "{pn} approve/remove/disapproved/check"
