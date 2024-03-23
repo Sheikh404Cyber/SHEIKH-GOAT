@@ -1,13 +1,13 @@
 module.exports = {
   config: {
-    name: "anivid",
+    name: "anime",
     version: "1.0",
     author: "kshitiz",
     countDown: 20,
     role: 0,
     shortDescription: "get anime video",
     longDescription: "get random anime video",
-    category: "anime",
+    category: "MEDIA",
     guide: "{pn}",
   },
 
