@@ -16,7 +16,7 @@ module.exports = {
 		longDescription: {
 			en: "mr.beast text to speech"
 		},
-		category: "𝗔𝗜",
+		category: "AI-TOOLS",
 		guide: {
 			en: "{p}beast [text]"
 		}
