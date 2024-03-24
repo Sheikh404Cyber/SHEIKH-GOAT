@@ -3,17 +3,17 @@ const axios = require("axios");
 module.exports = {
   config: {
     name: 'sam',
-    aliases: ["simma"],
+    aliases: ["sheikh"],
     version: '3.0',
     author: 'RUBISH',
     countDown: 0,
     role: 0,
     shortDescription: 'AI CHAT',
     longDescription: {
-      vi: 'Chat with simma',
-      en: 'Chat with simma'
+      vi: 'Chat with Sheikh',
+      en: 'Chat with Sam'
     },
-    category: 'Chat',
+    category: '🗨 | Ai-Chat',
     guide: {
       vi: '   {pn} Hi  ',
         
@@ -27,7 +27,7 @@ module.exports = {
       const reply = event.body.toLowerCase();
       if (isNaN(reply)) {
         try {
-          const response = await axios.get(`https://simma-rubish-api.onrender.com/chat?message=${encodeURIComponent(reply)}`);
+          const response = await axios.get(`https://simma-chat-rubish.onrender.com/chat?message=${encodeURIComponent(reply)}`);
           const ok = response.data.response;
           await api.sendMessage(ok, event.threadID, (error, info) => {
             global.GoatBot.onReply.set(info.messageID, {
@@ -50,14 +50,14 @@ module.exports = {
       const rubish = args.join(" ").toLowerCase();
       if (!args[0]) {
         api.sendMessage(
-          "Hello I'm sam\n\nHow can I assist you?",
+          "Hello I'm Sheikh\n\nHow can I assist you?",
           event.threadID,
           event.messageID
         );
         return;
       }
       if (rubish) {
-        const response = await axios.get(`https://simma-rubish-api.onrender.com/chat?message=${encodeURIComponent(rubish)}`);
+        const response = await axios.get(`https://simma-chat-rubish.onrender.com/chat?message=${encodeURIComponent(rubish)}`);
         const mg = response.data.response;
         await api.sendMessage({ body: mg }, event.threadID, (error, info) => {
           global.GoatBot.onReply.set(info.messageID, {
