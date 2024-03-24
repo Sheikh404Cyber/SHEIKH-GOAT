@@ -3,14 +3,14 @@ const axios = require('axios');
 module.exports = {
   config: {
     name: "Baby",
-    aliases: ["bby", "বেবি", "beby" ],
+    aliases: ["bby", "বেবি", "bot" ],
     version: "6.9.0",
     author: "dipto",
     countDown: 0,
     role: 0,
     shortDescription: "Chat with bot",
     longDescription: "Chat with bot",
-    category: "Chat",
+    category: "🗨 | Ai-Chat",
     guide: {
       en: "{pn}[anyMessage] teach [YourMessage] - [Reply1], [Reply2], [Reply3]... OR remove [YourMessage] OR remove [YourMessage] - [indexNumber] or msg or list OR edit [YourMessage] - [NewReply]"
     }
