@@ -9,7 +9,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Downdload Instagram video",
 		longDescription: "download Instagram video's,story,reels, photo etc.",
-		category: "media",
+		category: "⏳ | Downloader",
 		guide: "{pn} link"
 	},
 
