@@ -12,7 +12,7 @@ module.exports = {
       vi: "Chat với simsimi",
       en: "Chat with simsimi",
     },
-    category: "funny",
+    category: "🗨 | Ai-Chat",
     guide: {
       vi: "{pn} [on | off]: bật/tắt simsimi\ord>: chat nhanh với simsimi\hi",
       en: "{pn} <word>: chat with Alfred\t with a mple: hi",
