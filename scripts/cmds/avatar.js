@@ -12,7 +12,7 @@ module.exports = {
 			vi: "tạo avatar anime với chữ ký",
 			en: "create anime avatar with signature"
 		},
-		category: "image",
+		category: "🖼 | Image",
 		guide: {
 			vi: "   {p}{n} <mã số nhân vật hoặc tên nhân vật> | <chữ nền> | <chữ ký> | <tên màu tiếng anh hoặc mã màu nền (hex color)>"
 				+ "\n   {p}{n} help: xem cách dùng lệnh",
