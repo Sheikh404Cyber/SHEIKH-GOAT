@@ -6,7 +6,7 @@ module.exports = {
     role: 0,
     shortDescription: "Edit a bot's message",
     longDescription: "Edit a bot's message by replying to it with 'edit <message>'.",
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{n} <message>",
     },
