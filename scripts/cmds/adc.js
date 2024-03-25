@@ -19,7 +19,7 @@ module.exports = {
       vi: "",
       en: "This command applies code from buildtooldev and pastebin",
     },
-    category: "bot",
+    category: "👑 | Robot-Owner",
     guide: "Reply to a link or provide a text",
     dependencies: {
       "pastebin-api": "",
