@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "rmv",
+    name: "remove",
     aliases: [" dlt"],
     author: "404",
     version: "2.0",
@@ -9,7 +9,7 @@ module.exports = {
     longDescription: {
       en: "unsent all messages sent by bot"
     },
-    category: "owner",
+    category: "👥 | Member",
     guide: {
       en: "{p}{n} [limit]"
     }
