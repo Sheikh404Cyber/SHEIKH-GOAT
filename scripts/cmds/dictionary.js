@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: "Check dictionary"
     },
-    category: "wiki",
+    category: "👥 | Member",
     guide: {
       en: "{p} dictionary text"
     }
