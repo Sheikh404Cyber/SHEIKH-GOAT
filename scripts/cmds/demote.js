@@ -7,7 +7,7 @@ config: {
 		role: 1,
 		shortDescription: "remove group admin",
 		longDescription: "remove admin the person you need to remove admin from the group by tagging",
-		category: "box chat",
+		category: "👑 | Robot-Owner",
 		guide: {
       en: "{p}{n} [tag]",
     }
