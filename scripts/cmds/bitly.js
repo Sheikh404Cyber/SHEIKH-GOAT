@@ -11,7 +11,7 @@ longDescription: {
 en: "Shorten a link using Bitly"},
   shortDescription: {
 en: "Shorten a link using Bitly"},
-  category: "general",
+  category: "👥 | Member",
   usages: "<link>",
   countDowns: 10,
   role: 0,
