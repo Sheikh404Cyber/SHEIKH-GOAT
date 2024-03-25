@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "get corn video",
     longDescription: "get corn video",
-    category: "18+",
+    category: "⛔ | 18+",
     guide: "{pn} query"
   },
 
