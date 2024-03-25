@@ -11,7 +11,7 @@ module.exports = {
       en: "{p}chesca <question>" 
     },
     role: 0, // 0 - Everyone, 1 - Admin
-    category: "Ai",
+    category: "📖 | Education",
     author: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗"
   },
   onStart: async function({ api, event, args, message }) {
