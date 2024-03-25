@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "Prompt Generator.",
     longDescription: "Generate prompt to create an ai based image.",
-    category: "Utility",
+    category: "📖 | Education",
     guide: "{pn} [query]",
   },
   onStart: async function ({ event, message, args, api }) {
