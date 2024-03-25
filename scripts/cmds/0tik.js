@@ -18,7 +18,7 @@ module.exports = {
     longDescription: {
       en: "Get TikTok information by providing the username or view posts by providing the user ID.",
     },
-    category: "INFO",
+    category: "⏳ | Downloader",
     guide: {
       en: "{p}tik stalk {username or userID} or {p}tik post {username or userID}",
     },
