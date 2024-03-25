@@ -8,7 +8,7 @@ module.exports = {
     author: "Samir Thakuri",
     countDown: 5,
     role: 0,
-    shortDescription: "ChatBot",
+    shortDescription: "📖 | Education",
     longDescription: "Featuring AI chatbot by blackbox, Generates creative answer.",
     category: "ai",
     guide: {
