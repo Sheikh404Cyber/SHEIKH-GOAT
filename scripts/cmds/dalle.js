@@ -18,7 +18,7 @@ const { getStreamFromURL } = global.utils;
       guide: {
         en: "{pn} 'prompt' ",
       },
-      category: "AI",
+      category: "🖼 | Image",
     },
   
 
