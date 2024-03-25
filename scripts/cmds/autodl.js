@@ -11,7 +11,7 @@ module.exports = {
     description: {
       en: "Auto download video from tiktok, facebook, Instagram, YouTube, and more"
     },
-    category: "media",
+    category: "⏳ | Downloader",
     guide: {
       en: "[video_link]"
     }
