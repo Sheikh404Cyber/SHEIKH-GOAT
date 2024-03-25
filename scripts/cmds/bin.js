@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "This command allows you to upload files to pastebin and sends the link to the file."
     },
-    category: "BOT-OWNER",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "To use this command, type !pastebin <filename>. The file must be located in the 'cmds' folder."
     }
