@@ -17,7 +17,7 @@ module.exports = {
             vi: "Quản lý người dùng trong hệ thống bot",
             en: "Manage users in bot system"
         },
-        category: "owner",
+        category: "👑 | Robot-Owner",
         guide: {
             
         },
