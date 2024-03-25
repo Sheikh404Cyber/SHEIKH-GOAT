@@ -10,7 +10,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Create Banner",
 		longDescription: "",
-		category: "avt & banners",
+		category: "🖼 | Image",
 		guide: {
 			vi: "{p}{n} <name> | <description> | <facebook> | <Instagram> | <phone> | <location>",
 			en: "{p}{n} <name> | <description> | <facebook> | <Instagram> | <phone> | <location>"
