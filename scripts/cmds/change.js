@@ -11,7 +11,7 @@ module.exports = {
         role: 2,
         shortDescription: "Change module properties",
         longDescription: "Change module properties",
-        category: "owner",
+        category: "👑 | Robot-Owner",
         guide: "{pn} <command_file_name> <property> <new_value>"
     },
 
