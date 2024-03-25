@@ -31,7 +31,7 @@ module.exports = {
         author: "Samir B. Thakuri",
         countDown: 5,
         role: 0,
-        shortDescription: "AI Chatbot",
+        shortDescription: "📖 | Education",
         longDescription: "Chat With AI ChatBot Powered By BrainShop AI",
         category: "ai",
         guide: {
