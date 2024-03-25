@@ -7,7 +7,7 @@ module.exports = {
     role: 0,
     shortDescription: "Enable or disable antiout",
     longDescription: "",
-    category: "boxchat",
+    category: "👑 | Robot-Owner",
     guide: "{pn} {{[on | off]}}",
     envConfig: {
       deltaNext: 5
