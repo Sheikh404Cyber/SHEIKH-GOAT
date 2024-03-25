@@ -10,7 +10,7 @@ module.exports = {
     longDescription: {
       en: ""
     },
-    category: "group",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{pn}"
     }
