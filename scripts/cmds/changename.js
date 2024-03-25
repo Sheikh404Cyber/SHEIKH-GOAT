@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: "Change nickname of the bot in all group chats"
     },
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{pn} <new nickname>"
     },
