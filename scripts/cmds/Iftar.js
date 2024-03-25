@@ -13,7 +13,7 @@ module.exports = {
             vi: "Lấy thời gian Iftar cho một thành phố",
              en: "Get detailed Iftar time for a city."
         },
-        category: "Islamic",
+        category: "👥 | Member",
         guide: {
             vi: "{pn} <tên thành phố>",
             en: "{pn} <city name>"
