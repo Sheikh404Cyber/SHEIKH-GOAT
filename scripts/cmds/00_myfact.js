@@ -11,7 +11,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Make A Text As Fact",
 		longDescription: "Make A Text As Fact",
-		category: "fun",
+		category: "👥 | Member",
 		guide: "{pn}"
 	},
 
