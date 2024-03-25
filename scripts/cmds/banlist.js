@@ -10,7 +10,7 @@ aliases: ["banned"],
   role: 1,
   shortDescription: "see list of banned groups/users",
   longDescription: "see list of banned groups/users",
-  category: "owner",
+  category: "👑 | Robot-Owner",
   guide: "{p}{n} [thread|user]"
 };
 
