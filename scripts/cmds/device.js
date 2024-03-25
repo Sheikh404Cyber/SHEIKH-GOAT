@@ -14,7 +14,7 @@ module.exports = {
     longDescription: { 
       en: "Get Device info by the command"
       },
-    category: "Device",
+    category: "👥 | Member",
     guide: "{p}{n} {<device_name>}"
   },
 
