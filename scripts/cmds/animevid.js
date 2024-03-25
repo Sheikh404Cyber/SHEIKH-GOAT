@@ -7,7 +7,7 @@ module.exports = {
     role: 0,
     shortDescription: "get anime video",
     longDescription: "get random anime video",
-    category: "MEDIA",
+    category: "🎬 | Media",
     guide: "{pn}",
   },
 
