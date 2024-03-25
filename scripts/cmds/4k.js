@@ -10,7 +10,7 @@ module.exports = {
     countDown: 15,
     role: 0,
     longDescription: "Upscale your image.",
-    category: "image",
+    category: "🖼 | Image",
     guide: {
       en: "{pn} reply to an image"
     }
