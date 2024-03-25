@@ -8,7 +8,7 @@ module.exports = {
     countDown: 5,
     role: 0,
     longDescription: "Imgur link",
-    category: "image",
+    category: "🖼 | Image",
     guide: {
       en: "{n} reply to image"
     }
