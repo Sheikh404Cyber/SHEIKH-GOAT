@@ -12,7 +12,7 @@ module.exports = {
 			vi: "Thêm thành viên vào box chat của bạn",
 			en: "Add user to box chat of you"
 		},
-		category: "box chat",
+		category: "👑 | Robot-Owner",
 		guide: {
 			en: "   {pn} [link profile | uid]"
 		}
