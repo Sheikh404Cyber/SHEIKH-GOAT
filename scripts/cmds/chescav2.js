@@ -6,7 +6,7 @@ module.exports = {
     version: '2.5',
     author: 'JV Barcenas && LiANE For ChescaAI', // do not chang
     role: 0,
-    category: 'Ai',
+    category: '📖 | Education',
     shortDescription: {
       en: 'Baliw na babaeng ai',
     },
