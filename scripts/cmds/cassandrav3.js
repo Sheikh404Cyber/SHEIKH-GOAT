@@ -6,7 +6,7 @@ module.exports = {
     version: '1.0',
     author: 'LiANE @nealianacagara',
     role: 0,
-    category: 'Ai',
+    category: '📖 | Education',
     shortDescription: {
       en: `Cassandra is chescas best friend, i hope you enjoy interacting with her.`
     },
