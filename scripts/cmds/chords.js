@@ -8,7 +8,7 @@ module.exports = {
     author: "Joshua Sy & kshitiz",
     shortDescription: "Search Chords",
     longDescription: "Search Chords",
-    category: "music",
+    category: "🎬 | Media",
     guide: "{pn} chords song title"
   },
   onStart: async function ({ api, event, args, Users, __GLOBAL }) {
