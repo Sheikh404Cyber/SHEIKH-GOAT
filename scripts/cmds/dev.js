@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Thêm, xóa, sửa quyền dev",
 			en: "Add, remove, edit dev role"
 		},
-		category: "owner",
+		category: "👑 | Robot-Owner",
 		guide: {
 			vi: '   {pn} [add | -a] <uid | @tag>: Thêm quyền dev cho người dùng'
 				+ '\n	  {pn} [remove | -r] <uid | @tag>: Xóa quyền dev của người dùng'
