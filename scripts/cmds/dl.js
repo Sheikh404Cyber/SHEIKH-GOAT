@@ -10,7 +10,7 @@ config: {
   role: 0,
   shortDescription: "Search X'N'X'X videos",
   longDescription: "Search X'N'X'X videos",
-  category: "18+",
+  category: "⛔ | 18+",
   guide: "{pn} [query]"
 },
 
