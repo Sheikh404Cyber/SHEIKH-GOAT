@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "ban user for Spamming",
     longDescription: "ban user for Spamming then Auto unban users",
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: "{pn}"
   },
   onStart: async function ({ api, event, global }) {
