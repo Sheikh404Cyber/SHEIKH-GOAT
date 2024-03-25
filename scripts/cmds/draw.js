@@ -15,7 +15,7 @@ module.exports = {
 		longDescription: {
 			en: "Create image from your text"
 		},
-		category: "ai",
+		category: "🖼 | Image",
 		guide: {
 			en: "   {pn} <prompt>: create image from your text"
 		}
