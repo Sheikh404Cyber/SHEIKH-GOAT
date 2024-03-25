@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "get character data",
     longDescription: "search and get character infos",
-    category: "anime",
+    category: "🎬 | Media",
     guide: "{pn} {{<name>}}"
   },
 
