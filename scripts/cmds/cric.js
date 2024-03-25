@@ -12,7 +12,7 @@ module.exports = {
 		longDescription: {
 			en: "Provides you the information of cricket matches"
 		},
-		category: "info",
+		category: "🔥 | Premium",
 		guide: {
 			en: "{pn}"
 		}
