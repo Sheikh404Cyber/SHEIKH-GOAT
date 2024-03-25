@@ -42,7 +42,7 @@ module.exports = {
     longDescription: {
       en: "Chat with AI",
     },
-    category: "AI",
+    category: "📖 | Education",
     guide: {
       vi: "{pn} <Question>",
       en: "{pn} <Question>",
