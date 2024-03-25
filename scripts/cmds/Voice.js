@@ -8,7 +8,7 @@ module.exports = {
     author: "Rishad",
     countDown: 5,
     role: 0,
-    category: "Fun",
+    category: "🗨 | Ai-Chat",
     ShortDescription: "Generate voice using AI",
     LongDescription: "Generates voice using an AI.",
     guide: {
