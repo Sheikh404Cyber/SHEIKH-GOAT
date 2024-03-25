@@ -6,7 +6,7 @@ module.exports = {
     version: '1.0',
     author: 'Minn',
     role: 0,
-    category: 'Ai',
+    category: '📖 | Education',
     shortDescription: {
       en: `CatGPT is a GPT resembles a cat, have fun communicating with a cute AI!`
     },
