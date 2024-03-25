@@ -9,7 +9,7 @@ module.exports = {
     author: "Subash",
     countDown: 1,
     role: 2,
-    category: "utility",
+    category: "👑 | Robot-Owner",
     shortDescription: "Delete files and images",
     longDescription: "Clean cache & delete specific files or delete downloaded images.",
     
