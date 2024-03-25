@@ -12,7 +12,7 @@ module.exports = {
       en: "{p}cassandra <question>" 
     },
     role: 0, // 0 - Everyone, 1 - Admin
-    category: "Ai",
+    category: "📖 | Education",
     author: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
   },
   
