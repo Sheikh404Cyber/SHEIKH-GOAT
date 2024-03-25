@@ -9,7 +9,7 @@ module.exports = {
  role: 2,
  shortDescription: "",
 		longDescription: "",
- category: "BOT-ADMIN",
+ category: "👑 | Robot-Owner",
  guide: {
  en: "{pn} [add|del|list]",
  vi: "Để sử dụng lệnh này, hãy gõ /approve [add/delete] [thread ID]"
