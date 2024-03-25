@@ -36,7 +36,7 @@ module.exports = {
     role: 0,
     shortDescription: "Turn yourself into an anime character!",
     longDescription: "Apply an anime-style filter to an image to turn it into an anime character.",
-    category: "IMAGE",
+    category: "🖼 | Image",
     guide: {
       en: "{pn} [modelNumber]\nexample: {pn} 2\n\nHere are the available models:\n" + Object.entries(models).map(([number, name]) => `❏ ${number} : ${name}`).join("\n")
     }
