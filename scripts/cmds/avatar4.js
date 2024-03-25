@@ -10,7 +10,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Create fb avatar",
 		longDescription: "",
-		category: "avt & banners",
+		category: "🖼 | Image",
 		guide: {
 			en: "{p}{n} Characterame or code | text | Text",
 		}
