@@ -8,7 +8,7 @@ module.exports.config ={
   role: 0,
   author: "Dipto",
   longDescription: "Displays album options for selection.",
-  category: "MEDIA",
+  category: "🎬 | Media",
   countDown: 5,
   guide: {
       en: "{p}{n} or add [cartoon/photo/lofi/sad/islamic/funny/horny/anime]"
