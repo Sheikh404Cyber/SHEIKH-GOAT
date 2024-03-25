@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "sms Bomber",
     longDescription: "Sms bomber goatbot api",
-    category: "PREMIUM", 
+    category: "🔥 | Premium", 
     guide : {
     en: "{pn} <number> - <Limit>"
     }
