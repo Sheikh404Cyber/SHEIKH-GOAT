@@ -15,7 +15,7 @@ module.exports = {
  longDescription: {
  en: "couple dp"
  },
- category: "image",
+ category: "🖼 | Image",
  guide: {
  en: "{n}"
  }
