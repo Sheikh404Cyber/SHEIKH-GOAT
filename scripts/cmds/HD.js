@@ -14,7 +14,7 @@ module.exports = {
     cooldowns: 5,
     shortDescription: "Random 4k Video",
     longDescription: "get  edits videos from YouTube",
-    category: "MEDIA",
+    category: "🎬 | Media",
     dependencies: {
       "fs-extra": "",
       "axios": "",
