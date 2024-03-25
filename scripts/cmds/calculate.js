@@ -126,7 +126,7 @@ module.exports = {
     longDescription: {
       en: "calculate love percentage",
     },
-    category: "love",
+    category: "👥 | Member",
     guide: {
       en: "{p}{n} first name | second name",
     },
