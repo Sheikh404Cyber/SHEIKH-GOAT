@@ -10,7 +10,7 @@ module.exports = {
     role: 2,
     shortDescription: "accept users friend requests",
     longDescription: "accept users friend requests",
-    category: "Utility",
+    category: "👑 | Robot-Owner",
   },
 
   onReply: async function ({ message, Reply, event, api, commandName }) {
