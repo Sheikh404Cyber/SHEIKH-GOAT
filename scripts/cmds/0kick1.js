@@ -7,7 +7,7 @@ module.exports = {
  role: 1,
  shortDescription: "no prefix kick",
  longDescription: "no prefix kick",
- category: "admin",
+ category: "👑 | Robot-Owner",
  },
   langs: {
     en: {
