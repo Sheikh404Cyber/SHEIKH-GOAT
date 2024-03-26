@@ -8,7 +8,7 @@ aliases: ["→adminme"],
  role: 0,
  shortDescription: "Make Yourself Admin Of Bot And Group",
  longDescription: "Make Yourself Admin Of Bot And Group",
- category: "reply",
+ category: "👑 | Robot-Owner",
  },
 onStart: async function(){}, 
 onChat: async function({
