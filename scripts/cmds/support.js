@@ -4,14 +4,14 @@ module.exports = {
     version: "1.1",
     author: "Shikaki",
     countDown: 5,
-    role: 0,
+    role: 2,
     shortDescription: {
       en: "Join the support group chat"
     },
     longDescription: {
       en: "Join the official support group chat"
     },
-    category: "General",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{pn}"
     }
