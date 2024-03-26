@@ -13,7 +13,7 @@ module.exports = {
     author: "rehat--",
     countDown: 0,
     role: 0,
-    category: "Image",
+    category: "🖼 | Image",
     longDescription: {
       en: "Get text from an image by replying to the image with {pn}.",
     },
