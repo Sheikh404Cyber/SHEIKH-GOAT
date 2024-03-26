@@ -16,7 +16,7 @@ module.exports = {
       vi: "Gửi thông báo từ admin đến tất cả các box",
       en: "Send notification from admin to all boxes",
     },
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{pn} <message>",
     },
