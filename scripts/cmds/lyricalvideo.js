@@ -8,7 +8,7 @@ module.exports = {
     role: 0,
     shortDescription: "get lyrical video",
     longDescription: "it will send you lyrical video from lyrics edit vibe group",
-    category: "music",
+    category: "🎬 | Media",
     guide: "{pn} lyricalvideo",
   },
 
