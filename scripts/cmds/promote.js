@@ -1,13 +1,13 @@
 module.exports = {
 config: {
-		name: "promote",
+		name: "gadmin",
     version: "1.0",
 		author: "Samir B. Thakuri",
 		countDown: 5,
 		role: 1,
 		shortDescription: "add group admin",
 		longDescription: "add admin the person you need to add admin from the group by tagging",
-		category: "box chat",
+		category: "👑 | Robot-Owner",
 		guide: {
       en: "{p}{n} [tag]",
     }
