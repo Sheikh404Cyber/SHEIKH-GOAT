@@ -7,7 +7,7 @@ module.exports = {
     aliases: ["ocr2"],
     version: "1.0",
     author: "404",
-    category: "🔥 | Premium",
+    category: "🖼 | Image",
     longDescription: "Image to Text finder"
     },
   onStart: async function ({ message, event }) {
