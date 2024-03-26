@@ -10,7 +10,7 @@ const valentine = {
   longDescription: {
     en: "Image to zombie"
   },
-  category: "AI",
+  category: "🔥 | Premium",
   guide: {
     en: "{pn} reply to image"
   }
