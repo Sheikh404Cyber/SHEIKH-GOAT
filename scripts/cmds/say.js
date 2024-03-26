@@ -16,7 +16,7 @@ module.exports = {
     longDescription: {
       en: "text to speech language",
     },
-    category: "box chat",
+    category: "👥 | Member",
     guide: {
       en: "/say [language] [text]: Convert text to speech. Default language is English.\ample usages:\ay hi\ay ja こんにちは"
     },
