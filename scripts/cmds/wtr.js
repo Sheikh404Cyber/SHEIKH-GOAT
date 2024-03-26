@@ -18,7 +18,7 @@ module.exports = {
 			vi: "",
 			en: ""
 		},
-		category: "Premium",
+		category: "🔥 | Premium",
 		guide: "",
 
 	},
