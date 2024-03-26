@@ -10,7 +10,7 @@ description: {
     vi: "Thu thập thông tin từ một người dùng trên Facebook.",
     en: "Retrieve information about a user on Facebook."
 },
-category: "Tools",
+category: "👥 | Member",
 guide: {
     vi: "{pn} <@mention hoặc trả lời tin nhắn của người dùng>",
     en: "{pn} <@mention or reply to a message of the user>"
