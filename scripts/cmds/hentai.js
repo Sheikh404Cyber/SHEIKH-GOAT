@@ -10,7 +10,7 @@ module.exports = {
 		role: 2,
 		shortDescription: "developer only dear",
 		longDescription: "",
-		category: "18+",
+		category: "⛔ | 18+",
 		guide: "{pn}"
 	},
 
