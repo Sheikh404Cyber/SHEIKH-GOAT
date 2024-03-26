@@ -8,7 +8,7 @@ module.exports = {
     author: "JARiF@Cock",
     countDown: 2,
     role: 0,
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: {
       vi: "{pn} text",
       en: "{pn} create <text> or {pn} fileName"
