@@ -8,7 +8,7 @@ module.exports = {
       en: "pair with random people 😗",
       vi: ""
     },
-    category: "love",
+    category: "👥 | Member",
     guide: "{pn}"
   },
 
