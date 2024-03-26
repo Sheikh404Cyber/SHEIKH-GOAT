@@ -2,14 +2,14 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "gfx3",
+    name: "logo3",
     version: "1.0",
     author: "Samir.",
     countDown: 10,
     role: 0,
     shortDescription: "Make A gfx logo",
     longDescription: "Make A gfx logo",
-    category: "gfx",
+    category: "🎨 | Logo Art",
     guide: {
       en: "{p}{n} name | subname",
     }
