@@ -10,7 +10,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Anime Hentai",
 		longDescription: "Get Anime Hentai.",
-		category: "adult",
+		category: "⛔ | 18+",
 		guide: "{p} hentai2"
 	},
 
