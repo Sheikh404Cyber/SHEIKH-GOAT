@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "Tatoo image!",
     longDescription: "",
-    category: "fun",
+    category: "👥 | Member",
     guide: "{pn} [mention|leave_blank]",
     envConfig: {
       deltaNext: 5
