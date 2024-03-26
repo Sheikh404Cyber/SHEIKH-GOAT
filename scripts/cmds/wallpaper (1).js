@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "get wallpaper"
     },
-    category: "tools",
+    category: "👥 | Member",
     guide: {
       en: ""
     }
