@@ -14,7 +14,7 @@ module.exports = {
 		role: 0,
 		shortDescription : "make QR code or Decode QR code",
 		longDescription: "Bot will make you QR code based on you Text also it can decode QR code from qr Image",
-		category: "Image ",
+		category: "👥 | Member",
 		guide:{
 			en: "\n{pn} make 'yourtext'\n{pn} scan (with reply an image)"
 		}
