@@ -31,7 +31,7 @@ module.exports = {
 		longDescription: {
 			en: "Get info using uid/mention/reply to a message",
 		},
-		category: "𝗜𝗡𝗙𝗢",
+		category: "👥 | Member",
 		guide: {
 			en: "{pn}reply/uid/@mention",
 		},
