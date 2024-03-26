@@ -8,7 +8,7 @@ config: {
 		role: 2,
 		shortDescription: "Create a new chat group with the tag",
 		longDescription: "Create a new chat group with the tag",
-		category: "owner",
+		category: "👑 | Robot-Owner",
 		guide: {
       en: '"{pn} [tag] | [New group name] or "{pn} me [tag] | [New group name]"',
     }
