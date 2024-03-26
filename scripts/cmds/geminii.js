@@ -3,14 +3,14 @@ const FormData = require('form-data');
 
 module.exports = {
     config: {
-        name: "gemini",
+        name: "gemini2",
         version: "1.0",
         author: "Samir Thakuri",
         countDown: 5,
         role: 0,
         shortDescription: "Chat with Gemini API",
         longDescription: "Chat with Gemini API",
-        category: "ai",
+        category: "📖 | Education",
         guide: {
             en: "{pn} <query> - Chat with Gemini"
           + "\n{pn} clear - To clear the chat history"
