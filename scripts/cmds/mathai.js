@@ -7,7 +7,7 @@ module.exports = {
     author: "Samir Œ",
     countDown: 5,
     role: 0,
-    category: "math ai"
+    category: "📖 | Education"
   },
   onStart: async function({ message, event, args, commandName }) {
   const gay = args.join(' ');
