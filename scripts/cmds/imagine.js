@@ -10,7 +10,7 @@ module.exports = {
     longDescription: {
       en: 'Text to Image'
     },
-    category: 'ai',
+    category: '🖼 | Image',
     guide: {
       en: `{pn} prompt`
     }
