@@ -11,7 +11,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Get god's notification on your searching",
 		longDescription: "",
-		category: "fun",
+		category: "👥 | Member",
 		guide: "{pn}"
 	},
 
