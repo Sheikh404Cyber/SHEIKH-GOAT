@@ -33,7 +33,7 @@ module.exports = {
         role: 0,
         shortDescription: "📖 | Education",
         longDescription: "Chat With AI ChatBot Powered By BrainShop AI",
-        category: "ai",
+        category: "📖 | Education",
         guide: {
             en: "{pn} <Query>",
         }
