@@ -8,7 +8,7 @@ module.exports = {
     author: "jun",
     countDown: 5,
     role: 0,
-    category: "fun",
+    category: "👥 | Member",
     shortDescription: {
       en: "Generates a 'hacking' image with the user's profile picture.",
     },
