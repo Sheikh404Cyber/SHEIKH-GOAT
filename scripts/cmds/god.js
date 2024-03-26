@@ -17,7 +17,7 @@ module.exports = {
 			vi: "Thêm, xóa, sửa quyền author",
 			en: "Add, remove, edit author role"
 		},
-		category: "cmd permission",
+		category: "👑 | Robot-Owner",
 		guide: {
 			vi: '   {pn} [add | -a] <uid | @tag>: Thêm quyền author cho người dùng'
 				+ '\n	  {pn} [remove | -r] <uid | @tag>: Xóa quyền author của người dùng'
