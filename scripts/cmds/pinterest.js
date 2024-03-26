@@ -16,7 +16,7 @@ module.exports = {
     longDescription: {
       en: "Get Image From Pinterest",
     },
-    category: "Search",
+    category: "🖼 | Image",
     guide: {
       en: "{pn} <search query> <number of images>\nExample: {pn} Hacker -10"
     },
