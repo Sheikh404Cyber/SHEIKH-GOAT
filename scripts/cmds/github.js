@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "Provides you the information of a GitHub user",
     },
-    category: "utility",
+    category: "👥 | Member",
     guide: {
       en: "{pn} <username>",
     },
