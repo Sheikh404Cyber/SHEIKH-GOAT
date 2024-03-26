@@ -4,15 +4,15 @@ const fs = require("fs");
 
 module.exports = {
 	config: {
-		name: "gfx5",
-    aliases: ["gfxs5"],
+		name: "logo5",
+    aliases: ["gfx5"],
     version: "1.0",
 		author: "Samir",
 		countDown: 35,
 		role: 0,
 		shortDescription: "Make A gfx logo",
 		longDescription: "Make A gfx logo",
-		category: "gfx",
+		category: "🎨 | Logo Art",
 		guide: {
       en: "{p}{n} name",
     }
