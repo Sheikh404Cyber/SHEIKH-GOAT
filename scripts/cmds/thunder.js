@@ -9,7 +9,7 @@ config: {
 		role: 0,
 		shortDescription: "Write thunder Text Through textpro.me",
 		longDescription: "Write thunder Text Through textpro.me",
-		category: "textpro",
+		category: "🎨 | Logo Art",
 		guide: {
       en: "{p}{n} query",
     }
