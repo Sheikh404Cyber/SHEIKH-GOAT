@@ -10,10 +10,10 @@ module.exports = {
     version: '1.0',
     author: 'Samir',
     countDown: 20,
-    role: 2,
+    role: 0,
     shortDescription: 'Remove photo background',
     longDescription: 'Remove photo background',
-    category: 'owner',
+    category: '🔥 | Premium',
     guide: '{pn} [Reply to the image] or {pn} [image URL]',
   },
   onStart: async function ({ event, api, args }) {
