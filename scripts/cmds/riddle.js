@@ -13,7 +13,7 @@ module.exports = {
     longDescription: {
       en: "Get a random riddle and try to solve it!"
     },
-    category: "fun",
+    category: "👥 | Member",
     guide: {
       en: "{prefix}riddle"
     }
