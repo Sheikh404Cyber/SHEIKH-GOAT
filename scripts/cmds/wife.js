@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   config: {
-    name: "wifey",
+    name: "wife",
     aliases: ["shoti"],
     author: "404",
     version: "1.0",
@@ -12,7 +12,7 @@ module.exports = {
     role: 0,
     shortDescription: "Get random wifey ",
     longDescription: "Get random wifey video",
-    category: "fun",
+    category: "🎬 | Media",
     guide: "{pn}",
   },
 
@@ -31,7 +31,7 @@ module.exports = {
         const stream = fs.createReadStream(tempVideoPath);
 
         message.reply({
-          body: `Random Wifey Vidoes.`,
+          body: `Random Wife Vidoes.`,
           attachment: stream,
         });
 
