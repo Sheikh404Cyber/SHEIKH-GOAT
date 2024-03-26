@@ -11,7 +11,7 @@
     longDescription: {
       en: "🔰Checking Bot's ping🔰"
     },
-    category: "System",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{pn}"
     }
