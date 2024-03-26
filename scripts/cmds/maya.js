@@ -13,7 +13,7 @@ module.exports = {
       en: 'Chat with maya',
       ph: 'Kausapin si maya'
     },
-    category: 'sim',
+    category: '🗨 | Ai-Chat',
     guide: {
       en: '   {pn} maya <word>: chat with maya'
         + '\n   Example: {pn} maya hi',
