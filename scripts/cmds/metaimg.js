@@ -12,7 +12,7 @@ module.exports = {
     role: 0,
     shortDescription: "Generate images by Meta AI",
     longDescription: "Generate images by Meta AI",
-    category: "download",
+    category: "🖼 | Image",
     guide: {
       en: "{pn} prompt"
     }
