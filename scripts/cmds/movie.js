@@ -14,7 +14,7 @@ module.exports = {
 			vi: "",
 			en: "movie info"
 		},
-		category: "information",
+		category: "👥 | Member",
 		guide:  {
 			vi: "{pn} movie name",
 			en: "{pn} movie name"
