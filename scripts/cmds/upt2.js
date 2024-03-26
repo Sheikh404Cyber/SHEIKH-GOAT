@@ -9,7 +9,7 @@ module.exports = {
     version: "1.0",
     author: "JARiF@Cock",
     role: 0,
-    category: "system",
+    category: "👥 | Member",
     guide: {
       en: "{pn}"
     }
