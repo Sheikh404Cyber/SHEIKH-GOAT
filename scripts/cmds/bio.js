@@ -13,7 +13,7 @@ module.exports = {
       vi: " ",
       en: "change bot bio ",
     },
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{pn} <Text>",
     },
