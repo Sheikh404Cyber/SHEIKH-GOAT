@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
-		name: "uptime3",
-		aliases: ["upt3"],
+		name: "uptime2",
+		aliases: ["upt2"],
 		role: 0,
 		shortDescription: {
 			en: "Show server uptime",
@@ -11,7 +11,7 @@ module.exports = {
 			en: "Shows the duration for which the server has been running",
 			tl: "Ipapakita ang tagal na gumagana ang server",
 		},
-		category: "goatBot",
+		category: "👥 | Member",
 		guide: {
 			en: "{n}",
 			tl: "{n}",
