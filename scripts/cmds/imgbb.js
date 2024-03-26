@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "This command allows you to upload an image to imgbb."
     },
-    category: "tools",
+    category: "👥 | Member",
     guide: {
       en: "{pn} <replyIMG>"
     }
