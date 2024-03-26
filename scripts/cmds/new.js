@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "get bot owner info"
     },
-    category: "owner",
+    category: "👥 | Member",
     guide: {
       en: "{p}{n}"
     }
