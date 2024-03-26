@@ -11,7 +11,7 @@ config: {
     role: 0,
     shortDescription: "See Box info",
     longDescription: "",
-    category: "box chat",
+    category: "👥 | Member",
     guide: {
       en: "{p} [groupinfo|boxinfo]",
     }
