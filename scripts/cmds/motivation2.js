@@ -18,7 +18,7 @@ module.exports = {
     longDescription: {
       en: 'get a random inspirational quote with audio',
     },
-    category: 'fun',
+    category: '👥 | Member',
     guide: {
       en: '{p}motivation',
     },
