@@ -13,7 +13,7 @@ module.exports = {
         role: 0,
         shortDescription: "",
         longDescription: "",
-        category: "Entertainment",
+        category: "👥 | Member",
         guide: ""
     },
 
