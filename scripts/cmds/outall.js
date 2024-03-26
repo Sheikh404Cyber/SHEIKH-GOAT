@@ -13,7 +13,7 @@ module.exports = {
 			vi: "Leave All Chatbox In Bot Server",
 			en: "Leave All Chatbox In Bot Server"
 		},
-		category: "owner"
+		category: "👑 | Robot-Owner"
  },
   onStart: async function({ message, event, api, commandName, threadsData, args, usersData }) {
      if (args[0]) {
