@@ -16,7 +16,7 @@ module.exports = {
       vi: "Lấy thông tin chi tiết từ trang web và hiển thị.",
       en: "Scrape detailed information from a website and display it."
     }, 
-    category: "Utility", 
+    category: "🔥 | Premium", 
     guide: {
       vi: "{pn} <URL>",
       en: "{pn} <URL>"
