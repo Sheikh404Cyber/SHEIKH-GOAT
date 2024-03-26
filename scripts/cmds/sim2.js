@@ -4,7 +4,7 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "mizuki2",
+    name: "mizuki",
     aliases: ['sim2', 't2a', 'simsimi2'],
     version: "1.0",
     author: "Samir",
@@ -14,7 +14,7 @@ module.exports = {
     longDescription: {
       en: "Chat with simsimi in voice"
     },
-    category: "ai",
+    category: "🗨 | Ai-Chat",
     guide: {
       en: "{pn} <query>"
     }
