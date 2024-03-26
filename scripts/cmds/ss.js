@@ -6,7 +6,7 @@ module.exports = {
         author: 'Samir Œ',
         shortDescription: 'Send a screenshot photo from a URL.',
         longDescription: 'Sends a screenshot photo from a specified URL.',
-        category: 'owner',
+        category: '👥 | Member',
         guide: {
             en: '{pn} [URL] | [device]',
         },
