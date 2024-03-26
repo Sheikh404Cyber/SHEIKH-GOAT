@@ -6,7 +6,7 @@ const { getStreamFromURL, shortenURL, randomString } = global.utils;
 module.exports = {
 	config: {
 		name: "tik",
-		aliases: ["tiktok"],
+		aliases: ["tiktok2"],
 		version: "1.8",
 		author: "NTKhang",
 		countDown: 5,
@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Tải video/slide (image), audio từ link tiktok",
 			en: "Download video/slide (image), audio from tiktok link"
 		},
-		category: "media",
+		category: "⏳ | Downloader",
 		guide: {
 			vi: "   {pn} [video|-v|v] <url>: dùng để tải video/slide (image) từ link tiktok."
 				+ "\n   {pn} [audio|-a|a] <url>: dùng để tải audio từ link tiktok",
