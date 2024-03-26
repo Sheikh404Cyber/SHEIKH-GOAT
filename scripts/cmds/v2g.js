@@ -8,7 +8,7 @@ module.exports = {
     author: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
     role: 0,
     countDown: 1,
-    category: "goatbot",
+    category: "🎬 | Media",
     longDescription: "Video to gif converter",
     guide: "{pn} [link] or [reply to a video]"
   },
