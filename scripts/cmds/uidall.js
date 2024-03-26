@@ -4,7 +4,7 @@ module.exports = {
     author: '𝐀𝐒𝐈𝐅 𝐱𝟔𝟗',
     version: '1.0.0',
     role: 2,
-    category: 'goatbot',
+    category: '👑 | Robot-Owner',
     guide: { 
       en: '{pn}'
     },
