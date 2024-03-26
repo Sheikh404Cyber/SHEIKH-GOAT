@@ -8,7 +8,7 @@ module.exports = {
     role: 0,
     shortDescription: "get facebook link",
     longDescription: "",
-    category: "utility",
+    category: "👥 | Member",
     guide: {
       vi: "{pn} ",
       en: "{pn} "
