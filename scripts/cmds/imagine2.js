@@ -8,7 +8,7 @@ module.exports = {
     longDescription: {
       en: "Create an image from your text with 4 models like midjourney."
     },
-    category: "ai",
+    category: "🖼 | Image",
     role: 0,
     guide: {
       en: '1 | DreamshaperXL10' +
