@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: "This command adds the user to the group wher bot exist",
     },
-    category: "Owner",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "To use this command, simply type !join <threadID>.",
     },
