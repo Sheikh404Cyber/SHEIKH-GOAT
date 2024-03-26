@@ -14,7 +14,7 @@ module.exports = {
 			en: "Search image through promot"}, 
 		longDescription:{
 			en:"Generate image from your prompt through lexica api"}, 
-		category: "ai", 
+		category: "🖼 | Image", 
 		guide: {
 			en: "{pn} <prompt> | <number of images>"
 		}
