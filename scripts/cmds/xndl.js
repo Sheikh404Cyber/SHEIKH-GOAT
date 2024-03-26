@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "Download video XNXX from XNXX (public)"
     },
-    category: "18+",
+    category: "⛔ | 18+",
     guide: {
       en: "{pn} <url video X'N'X'X>: download video from X'N'X'X"
     }
