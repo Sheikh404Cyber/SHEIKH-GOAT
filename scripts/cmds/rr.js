@@ -1,12 +1,12 @@
 module.exports = {
     config: {
-        name: "rs",
+        name: "rsspam",
         version: "6.9",
         author: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
         countDown: 5,
-        role: 0,
+        role: 2,
         description: "Reaction spammer",
-        category: "owner",
+        category: "👑 | Robot-Owner",
         guide: {
             en: "{pn}"
         }
