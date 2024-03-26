@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Tải video/story từ facebook (công khai)",
 			en: "Download video/story from facebook (public)"
 		},
-		category: "media",
+		category: "⏳ | Downloader",
 		guide: {
 			en: "   {pn} <url video/story>: tải video từ facebook"
 		}
