@@ -32,7 +32,7 @@ module.exports = {
     version: "1.0",
     author: "LiANE",
     role: 2,
-    category: "owner",
+    category: "👑 | Robot-Owner",
     shortDescription: {
       en: "Sets a no prefix alias to an existing command without modifying existing files",
     },
