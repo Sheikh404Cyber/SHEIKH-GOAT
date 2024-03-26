@@ -1,13 +1,13 @@
 module.exports = {
   config: {
-    name: "play",
+    name: "song",
     version: "1.0",
     role: 0,
     author: "KSHITIZ",
     cooldowns: 5,
     shortdescription: "play song with lyrics",//use offical music name 
     longdescription: "always use official music title for lyrics",
-    category: "music",
+    category: "🎬 | Media",
     usages: "{pn} play (song name)",
     dependencies: {
       "fs-extra": "",
