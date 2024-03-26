@@ -11,7 +11,7 @@
  longDescription: {
  en: ""
  },
- category: "group",
+ category: "👥 | Member",
  guide: {
  en: "{pn}"
  }
