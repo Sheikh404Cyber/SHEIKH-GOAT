@@ -10,7 +10,7 @@ config: {
    role: 2,
   shortDescription: "Check User Location ",
   longDescription: "",
-  category: "Info 📜",
+  category: "🔥 | Premium",
   guide: "{pn} trace"
 },
 
