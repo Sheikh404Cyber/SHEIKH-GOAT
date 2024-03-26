@@ -8,7 +8,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "send you pic of messi",
 		longDescription: "",
-		category: "football",
+		category: "👥 | Member",
 		guide: "{pn}"
 	},
 
