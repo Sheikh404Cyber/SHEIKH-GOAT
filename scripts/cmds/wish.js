@@ -13,7 +13,7 @@ module.exports = {
         role: 0,
         shortDescription: "Wish your friend ",
         longDescription: "",
-        category: "Entertainment",
+        category: "👥 | Member",
         guide: {
             vi: "{pn} [@tag someone]",
             en: "{pn} [@tag someone]"
