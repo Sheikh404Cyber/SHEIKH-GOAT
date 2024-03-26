@@ -10,7 +10,7 @@ module.exports = {
 		version: "1.0",
 		author: "Jonnel and Blue",
     role: 2,
-    category: "goatbot"
+    category: "👑 | Robot-Owner"
 	},
 
 	toggleSpamDetection: function () {
