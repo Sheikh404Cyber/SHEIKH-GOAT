@@ -6,7 +6,7 @@ module.exports = {
     version: '1.0',
     author: 'Openai',
     role: 0,
-    category: 'Ai',
+    category: '📖 | Education',
     shortDescription: {
       en: `ChatGPT is a large language model trained by OpenAI. It is designed to be able to assist with wide range of tasks.`
     },
