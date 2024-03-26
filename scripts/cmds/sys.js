@@ -8,7 +8,7 @@ module.exports = {
     role: 0,
     shortDescription: "System",
     longDescription: "",
-    category: "goatbot",
+    category: "👑 | Robot-Owner",
     guide: "{pn}"
   },
 
