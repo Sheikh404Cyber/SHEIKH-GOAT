@@ -14,7 +14,7 @@ module.exports = {
      },
     //shortDescription: "Create FB Banner",
 
-    category: "fun",
+    category: "🎬 | Media",
     guide: {
       en: "{p}{n}"
     }
