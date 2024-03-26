@@ -4,10 +4,10 @@ const fs = require("fs-extra");
 
 module.exports = {
   config: {
-    name: "pair4",
+    name: "pair2",
     countDown: 5,
     role: 0,
-    category: "fun",
+    category: "👥 | Member",
     shortDescription: {
       en: "",
     },
