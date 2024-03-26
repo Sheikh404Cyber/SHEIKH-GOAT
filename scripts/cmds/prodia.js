@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: 'Text to Image'
     },
-    category: 'ai',
+    category: '🖼 | Image',
     guide: {
       en: '1 | 3Guofeng3_v34' +
         '\n2 | absolutereality_V16' +
