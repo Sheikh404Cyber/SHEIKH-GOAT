@@ -21,7 +21,7 @@ module.exports = {
       vi: "Lấy HTML trang web và lưu vào Pastebin",
       en: "Get HTML of a website and save it to Pastebin"
     },
-    category: "utility",
+    category: "👥 | Member",
     guide: {
       vi: "{pn} <link-trang-web>",
       en: "{pn} <website-link>"
