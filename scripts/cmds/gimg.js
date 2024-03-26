@@ -14,7 +14,7 @@ module.exports = {
 			en: "Search image google"}, 
 		longDescription:{
 			en:"Search Images from Google"}, 
-		category: "media", 
+		category: "👥 | Member", 
 		guide: {
 			en: "{pn} <name>"
 		}
