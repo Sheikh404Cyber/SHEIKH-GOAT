@@ -10,7 +10,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "",
 		longDescription: "",
-		category: "font",
+		category: "👥 | Member",
 		guide: "{pn}"
 	},
 	onStart: async function({ event, api, args }) {
