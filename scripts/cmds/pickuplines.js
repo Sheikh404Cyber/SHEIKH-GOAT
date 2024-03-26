@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "Get Random Pickupline",
     longDescription: "Get Random Pickupline",
-    category: "Fun",
+    category: "👥 | Member",
     guide: "{p}{n}"
   },
 
