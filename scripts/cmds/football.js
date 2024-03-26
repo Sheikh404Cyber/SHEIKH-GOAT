@@ -16,7 +16,7 @@ module.exports = {
     longDescription: {
       en: "get latest football updates"
     },
-    category: "media",
+    category: "🎬 | Media",
     guide: {
       en: "{p}{n} click on vdo url"
     }
