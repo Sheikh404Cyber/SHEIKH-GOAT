@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "rip image",
     longDescription: "rip image",
-    category: "fun",
+    category: "👥 | Member",
     guide: {
       vi: "{pn} [@tag | blank]",
       en: "{pn} [@tag]"
