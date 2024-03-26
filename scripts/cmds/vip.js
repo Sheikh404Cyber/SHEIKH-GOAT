@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Thêm, xóa, sửa quyền vip",
 			en: "Add, remove, edit vip role"
 		},
-		category: "box chat",
+		category: "👑 | Robot-Owner",
 		guide: {
 			vi: '   {pn} [add | -a] <uid | @tag>: Thêm quyền vip cho người dùng'
 				+ '\n	  {pn} [remove | -r] <uid | @tag>: Xóa quyền vip của người dùng'
