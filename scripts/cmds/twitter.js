@@ -15,7 +15,7 @@ module.exports = {
       vi: "Tải video twitter từ twitter (công khai)",
       en: "Download video twitter from twitter (public)"
     },
-    category: "media",
+    category: "⏳ | Downloader",
     guide: {
       vi: "   {pn} <url video twitter>: tải video từ twitter",
       en: "   {pn} <url video twitter>: download video from twitter"
