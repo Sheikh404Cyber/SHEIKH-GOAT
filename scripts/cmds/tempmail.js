@@ -11,7 +11,7 @@ module.exports = {
     role: 0,
     shortDescription: "Generate temporary email addresses",
     longDescription: "Generate temporary email addresses for temporary usage.",
-    category: "tools",
+    category: "🔥 | Premium",
     guide: {
       en: "{pn} [inbox <email>] - Generate a temporary email address or retrieve messages from the inbox.",
     },
