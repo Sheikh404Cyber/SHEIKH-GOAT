@@ -7,7 +7,7 @@ config: {
     role: 0,
     author: 'dipto',
     longDescription: 'Upload image to imgbb and return link!',
-    category: 'utillittes',
+    category: '👥 | Member',
     guide: '[reply | link]',
     countDown: 2
 },
