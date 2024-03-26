@@ -8,7 +8,7 @@ module.exports = {
     role: 0,
     shortDescription: "View profile picture",
     longDescription: "View the profile picture of a user.",
-    category: "Utility",
+    category: "👥 | Member",
     guide: {
       en: "{pn} [@tag|uid|fbLink] (or reply to a message)",
     },
