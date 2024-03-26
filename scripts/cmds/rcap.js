@@ -9,7 +9,7 @@ module.exports = {
     author: "RUBISH",
     countDown: 0,
     role: 0,
-    category: "Entertainment",
+    category: "👥 | Member",
     guide: "{p}caption [love, islamic, funny, birthday, sad]",
   },
 
