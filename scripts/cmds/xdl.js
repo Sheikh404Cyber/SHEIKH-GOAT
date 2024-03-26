@@ -16,7 +16,7 @@ module.exports = {
       vi: "Tải video X'VIDEOS từ X'VIDEOS (công khai)",
       en: "Download video X'VIDEOS from X'VIDEOS (public)"
     },
-    category: "18+",
+    category: "⛔ | 18+",
     guide: {
       vi: "   {pn} <url video X'VIDEOS>: tải video từ X'VIDEOS",
       en: "   {pn} <url video X'VIDEOS>: download video from X'VIDEOS"
