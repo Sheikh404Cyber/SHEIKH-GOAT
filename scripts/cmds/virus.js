@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "Check if the URL is malicious or not.",
     longDescription: "Check if the URL is malicious or not.",
-    category: "utility",
+    category: "👑 | Robot-Owner",
     guide: {
       en: "{p}{n} [URL]",
     }
