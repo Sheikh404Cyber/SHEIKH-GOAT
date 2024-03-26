@@ -11,7 +11,7 @@ module.exports = {
     role: 2,
     shortDescription: "accept pending message",
     longDescription: "accept pending message",
-    category: "utility",
+    category: "👑 | Robot-Owner",
   },
 
   onReply: async function ({ message, api, event, usersData, Reply }) {
