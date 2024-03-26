@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "",
     longDescription: "Download video or audio from Facebook",
-    category: "media",
+    category: "⏳ | Downloader",
     guide: "{pn}fbdl2 [audio/video link]",
   },
   onStart: async function ({ api, event, args }) {
