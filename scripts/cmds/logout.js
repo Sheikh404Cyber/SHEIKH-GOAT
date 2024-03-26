@@ -7,7 +7,7 @@ module.exports = {
     role: 0,
     shortDescription: "Logout Bot's Account",
     longDescription: "Logout Bot's Account",
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: "{p}{n}"
   },
   onStart: async function({ event, api }) {
