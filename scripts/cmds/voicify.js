@@ -56,7 +56,7 @@ module.exports = {
         role: 0,
         shortDescription: "Remove vocals from music",
         longDescription: "Remove vocals from music.",
-        category: "music",
+        category: "🎬 | Media",
         guide: "{p}voicify (reply to audio or video)"
     },
     onStart: function ({ api, event, args, message }) {
