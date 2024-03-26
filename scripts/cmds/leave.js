@@ -14,7 +14,7 @@ module.exports = {
       vi: "",
       en: " "
     },
-    category: "Owner",
+    category: "👑 | Robot-Owner",
     guide: {
       vi: "",
       en: "{pn} or {pn} <reason>"
