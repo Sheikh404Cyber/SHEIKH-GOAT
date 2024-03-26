@@ -16,7 +16,7 @@ module.exports = {
     longDescription: {
       en: "generate image from polination"
     },
-    category: "ai",
+    category: "🖼 | Image",
     guide: "{pn} your prompt ",
   },
 
