@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "ip address lookup",
     longDescription: "ip address lookup",
-    category: "utility",
+    category: "🔥 | Premium",
   },
   onStart: async function({ api, event, args }) {
     const timeStart = Date.now();
