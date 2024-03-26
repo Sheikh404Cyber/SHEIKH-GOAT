@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "Make A TextPro logo",
     longDescription: "Make A TextPro logo",
-    category: "textpro",
+    category: "🎨 | Logo Art",
     guide: {
       en: "{pn}[text] | [number]",
     }
