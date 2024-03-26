@@ -15,7 +15,7 @@ module.exports = {
       vi: "",
       en: "Create gif image."
     },
-    category: "image",
+    category: "🖼 | Image",
     guide: {
       vi: "{pn} < text >",
       en: "{pn} < text >"
