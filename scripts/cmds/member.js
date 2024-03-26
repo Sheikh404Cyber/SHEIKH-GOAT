@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "MemberList",
     longDescription: "MemberList",
-    category: "image",
+    category: "👑 | Robot-Owner",
     guide: "{pn}"
   },
   onStart: async function ({ api, event }) {
