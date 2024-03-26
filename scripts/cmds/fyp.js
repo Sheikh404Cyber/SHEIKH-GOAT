@@ -10,7 +10,7 @@ async function getStreamFromURL(url) {
 
 module.exports = {
   config: {
-    name: "fyp",
+    name: "tiktok",
     version: "1.0",
     author: "kshitiz",
     countDown: 15,
@@ -19,7 +19,7 @@ module.exports = {
     longDescription: {
       en: "random videos from tiktok"
     },
-    category: "𝗠𝗘𝗗𝗜𝗔",
+    category: "🎬 | Media",
     guide: {
       en: "{p}{n}"
     }
