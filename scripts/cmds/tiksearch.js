@@ -20,7 +20,7 @@ module.exports = {
     longDescription: {
       en: "Play a TikTok video by providing the video number.",
     },
-    category: "Entertainment",
+    category: "🎬 | Media",
     guide: {
       en: "{p}{n} [keyword]",
     },
