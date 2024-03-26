@@ -21,7 +21,7 @@ module.exports = {
     longDescription: {
       en: 'get a random inspirational quote every hour ',
     },
-    category: 'fun',
+    category: '👥 | Member',
     guide: {
       en: '{p}{n} on / off',
     },
