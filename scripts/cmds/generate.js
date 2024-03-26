@@ -14,7 +14,7 @@ module.exports = {
     longDescription: {
       en: "Text to image"
     },
-    category: "image",
+    category: "🖼 | Image",
     guide: {
       en: '{pn} your prompt | Type' +
         ' here are supported models:' +
