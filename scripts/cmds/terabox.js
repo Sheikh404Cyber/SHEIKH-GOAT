@@ -15,7 +15,7 @@ module.exports = {
 			vi: "Tải video terabox từ terabox (công khai)",
 			en: "Download video terabox from terabox (public)"
 		},
-		category: "media",
+		category: "⏳ | Downloader",
 		guide: {
 			vi: "   {pn} <url video terabox>: tải video từ terabox",
 			en: "   {pn} <url video terabox>: download video from terabox"
@@ -58,7 +58,7 @@ module.exports = {
       const create_time = response.data.create_time
       const size = response.data.size
       
-			await message.reply({ body: `♪♪ 𝐀𝐒𝐈𝐅 𝐱𝟔𝟗 ♪♪\n\nName: ${name}\nCreator: ${creator}\nCreate_Time: ${create_time}\nSize: ${size}`,
+			await message.reply({ body: `♪♪ Sheikh Robot ♪♪\n\nName: ${name}\nCreator: ${creator}\nCreate_Time: ${create_time}\nSize: ${size}`,
         attachment: stream });
 
 			message.unsend((await msgSend),event.messageID);
