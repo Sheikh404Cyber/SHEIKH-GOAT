@@ -1,13 +1,13 @@
 module.exports = {
   config: {
-    name: "video",
+    name: "4kvideo",
     version: "1.1",
     author: "kshitiz",//respect author dont change
     countDown: 5,
     role: 0,
     shortDescription: "structure for category baed videos",
     longDescription: "your actual discription",
-    category: "media",
+    category: "🎬 | Media",
     guide: "{p}{n} category",
   },
 
