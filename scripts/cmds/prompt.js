@@ -11,7 +11,7 @@ module.exports = {
       vi: "",
       en: "Get midjourney prompts."
     },
-    category: "AI"
+    category: "📖 | Education"
   },
   onStart: async function ({ message, event, args, api }) {
     try {
