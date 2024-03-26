@@ -10,7 +10,7 @@ config: {
   role: 2,
   shortDescription: '',
   longDescription: '',
-  category: 'Social',
+  category: '🔥 | Premium',
   guide: '{pn} fbshare',
 },
 
