@@ -12,7 +12,7 @@ module.exports = {
  longDescription: {
  en: "Provides you the information of tiktok user"
  },
- category: "info",
+ category: "👥 | Member",
  guide: {
  en: "{pn} <username>"
  }
