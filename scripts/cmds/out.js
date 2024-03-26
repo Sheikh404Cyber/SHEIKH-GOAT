@@ -12,7 +12,7 @@ module.exports = {
     longDescription: {
       en: "remove bot from the group"
     },
-    category: "owner",
+    category: "👑 | Robot-Owner",
     guide: {
       en: ""
     }
