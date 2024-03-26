@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Request Premium Cmds ",
 			en: "Request Premium Cmds for you"
 		},
-		category: "cmd permission",
+		category: "👑 | Robot-Owner",
 		guide: {
 			vi: "   {pn} <reason>",
 			en: "   {pn} <reason to become vip>"
