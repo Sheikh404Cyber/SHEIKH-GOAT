@@ -11,7 +11,7 @@ module.exports = {
       vi: "Khởi động lại bot",
       en: "Restart bot"
     },
-    category: "Owner",
+    category: "👑 | Robot-Owner",
     guide: {
       vi: "   {pn}: Khởi động lại bot",
       en: "   {pn}: Restart bot"
@@ -23,7 +23,7 @@ module.exports = {
       restartting: "⚪🔴🟢 ‖ Đang khởi động lại bot..."
     },
     en: {
-      restartting: "⚪🔴⚫ ‖ 𝐀𝐒𝐈𝐅 𝐱𝟔𝟗 ‖ 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐁𝐨𝐭..."
+      restartting: "⚪🔴⚫ ‖ 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐁𝐨𝐭..."
     }
   },
 
