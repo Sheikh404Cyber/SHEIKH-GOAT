@@ -12,7 +12,7 @@ module.exports = {
         role: 0,
         shortDescription: "Purpose Your Beb",
         longDescription: "Purpose Your Beb",
-        category: "love",
+        category: "👥 | Member",
         guide: {
             vi: "{pn} @tag ",
             en: "{pn} @tag "
