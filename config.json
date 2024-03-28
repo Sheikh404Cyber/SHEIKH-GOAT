@@ -74,6 +74,7 @@
     "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   },
   "nickNameBot": "🅢🅗🅔🅘🅚🅗-🅡🅞🅑🅞🅣 🅥❸.⓿",
+   "API": "https://noobs-api.onrender.com",
   "prefix": ".",
   "database": {
     "type": "json",
