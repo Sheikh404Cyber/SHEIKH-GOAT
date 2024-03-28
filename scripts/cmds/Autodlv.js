@@ -12,7 +12,7 @@ module.exports = {
     role: 0,
     shortDescription: 'Auto video downloader for Instagram, Facebook, and TikTok',
     longDescription: '',
-    category: 'media',
+    category: '⏳ | Downloader',
     guide: {
       en: '{p}{n}',
     }
@@ -33,7 +33,7 @@ module.exports = {
       const { url } = this.checkLink(event.body);
       console.log(`Attempting to download from URL: ${url}`);
       this.downLoad(url, api, event);
-      api.setMessageReaction("💐", event.messageID, (err) => {}, true);
+      api.setMessageReaction("💜", event.messageID, (err) => {}, true);
     }
   },
   downLoad: function (url, api, event) {
@@ -104,7 +104,7 @@ module.exports = {
           return api.sendMessage("𝚃𝚑𝚎 𝚏𝚒𝚕𝚎 𝚒𝚜 𝚝𝚘𝚘 𝚕𝚊𝚛𝚐𝚎, 𝚌𝚊𝚗𝚗𝚘𝚝 𝚋𝚎 𝚜𝚎𝚗𝚝⛔", event.threadID, () => fs.unlinkSync(path), event.messageID);
         }
         api.sendMessage({
-          body: "𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐘𝐎𝐔𝐑 𝐕𝐈𝐃𝐄𝐎!📛",
+          body: "Your Video Download Succesful.",
           attachment: fs.createReadStream(path)
         }, event.threadID, () => fs.unlinkSync(path), event.messageID);
       }).catch(err => console.error(err));
