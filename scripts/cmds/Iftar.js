@@ -27,7 +27,7 @@ module.exports = {
          return api.sendMessage("❎ | Please Enter a City Name...", event.threadID, event.messageID);
        }
         try {
-            const response = await axios.get(`https://noobs-apihouse.onrender.com/dipto/iftar?name=${encodeURIComponent(cityName)}`);
+            const response = await axios.get(`https://noobs-api.onrender.com/dipto/iftar?name=${encodeURIComponent(cityName)}`);
             const iftarInfo = response.data;
 
             if (!iftarInfo) {
