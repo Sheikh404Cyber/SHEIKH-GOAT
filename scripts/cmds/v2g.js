@@ -22,7 +22,7 @@ module.exports = {
           return message.reply('❌| Please provide a link or reply to a video.', event.threadID);
         }
 
-      const { data } = await get(`https://all-image-genator-d1p.onrender.com/dipto/gif?url=${encodeURIComponent(d)}`);
+      const { data } = await get(`https://noobs-api.onrender.com/dipto/gif?url=${encodeURIComponent(d)}`);
 
   message.reply({ 
     body: `
