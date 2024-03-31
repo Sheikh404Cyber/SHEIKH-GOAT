@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-			name: "hi",
+			name: "bot",
 			version: "1.0",
 			author: "Jaychris Garcia",
 			countDown: 5,
@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "hi") return message.reply("hello love, how can i help you?");
+	if (event.body && event.body.toLowerCase() == "Robot") return message.reply("জ্বি বলো শুনছি 😽, এতো ডাকো কেন তোমার বান্ধুবিকে আমার হাতে তুলে দিবে বুঝি? 🙅‍♂️🙊");
 }
 };
