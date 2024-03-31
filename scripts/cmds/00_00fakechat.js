@@ -20,7 +20,7 @@ module.exports = {
 				role: 0,
 				shortDescription: "",
 				longDescription: "fake fb chat",
-				category: "fun",
+				category: "🖼 | Image",
 				guide: "{p} mention | {text}"
 		},
 
