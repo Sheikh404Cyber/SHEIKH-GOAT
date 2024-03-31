@@ -31,7 +31,7 @@ dipto.startsWith('https://www.instagram.com/p/') || dipto.startsWith('https://pi
 const aa = await axios.get(`${global.GoatBot.config.API}/dipto/alldl?url=${encodeURIComponent(dipto)}`);
    const bb = aa.data;
    const shortUrl = await tinyurl.shorten(bb.result);
-   const MSG = `✅ 🔗 Download Url: ${shortUrl}`;
+   const MSG = ``;
    let ex;
    let cp;
         if (bb.result.includes('.jpg')){
