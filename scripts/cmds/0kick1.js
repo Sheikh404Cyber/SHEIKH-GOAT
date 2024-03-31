@@ -1,6 +1,6 @@
 module.exports = {
  config: {
- name: "kick1",
+ name: "kick",
  version: "1.0",
  author: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
  countDown: 5,
