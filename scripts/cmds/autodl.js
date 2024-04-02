@@ -8,7 +8,7 @@ module.exports.config = {
   role: 0,
   author: "Dipto",
   description: "Fb Vid Downloader",
-  category: "other",
+  category: "⏳ | Downloader",
   guide: {en:"fb video link"},
    usePrefix: true,
   coolDowns: 2
