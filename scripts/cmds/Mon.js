@@ -11,7 +11,7 @@ let hubbleData;
 
 module.exports = {
 	config: {
-		name: "hubble",
+		name: "mon",
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
