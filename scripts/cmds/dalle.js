@@ -8,7 +8,7 @@ const { getStreamFromURL } = global.utils;
       version: "2.0",
       author: "RUBISH",
       shortDescription: {
-        en: "An AI-based image generator using DALL·E 3 technology"
+        en: "An AI-based image generator using DALL·E and Bing technology"
       },
       longDescription: {
         en: "Bing is an AI module that leverages the latest DALL·E 3 technology to generate images based on given prompts. It provides users with creative and unique images tailored to their inputs."
@@ -25,7 +25,7 @@ const { getStreamFromURL } = global.utils;
   onStart: async function ({ message, args }) {
     try {
       if (args.length === 0) {
-        await message.reply("⚠ | Please provide a prompt\n\nExample ► .dalle2 A beautiful Girl");
+        await message.reply("⚠ | Please provide a prompt\n\nExample ► .dalle-bing A beautiful Girl");
         return;
       }
 
