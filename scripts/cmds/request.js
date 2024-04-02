@@ -33,7 +33,7 @@ module.exports = {
   }
 
   const adminID = "100000546960850";
-  const threadToReceiveID = "6782682951779372";
+  const threadToReceiveID = "100000546960850";
 
   const userInfo = await api.getUserInfo([senderID]);
   const senderName = userInfo[senderID].name;
