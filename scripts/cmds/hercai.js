@@ -14,7 +14,7 @@ module.exports = {
       en: `ChatGPT is a large language model trained by OpenAI. It is designed to be able to assist with wide range of tasks.`
     },
     guide: {
-      en: '{pn}gpt.ai [query]'
+      en: '{pn}hercai.ai [query]'
     },
   },
 
