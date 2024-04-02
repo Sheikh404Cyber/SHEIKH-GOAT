@@ -1,6 +1,6 @@
 module.exports = {
 config: {
-		name: "demote",
+		name: "removeadmin",
     version: "1.0",
 		author: "Samir B. Thakuri",
 		countDown: 5,
