@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "riddle",
+    name: "game",
     version: "1.1",
     author: "Shikaki",
     countDown: 10,
