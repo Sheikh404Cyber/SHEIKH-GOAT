@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: 'chescav2',
+    name: 'chesca',
     version: '2.5',
     author: 'JV Barcenas && LiANE For ChescaAI', // do not chang
     role: 0,
