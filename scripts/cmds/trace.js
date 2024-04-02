@@ -1,7 +1,7 @@
 const axios = require("axios");
-const adminName = "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗"; // Replace with your admin's name
+const adminName = "AMIN SHEIKH"; // Replace with your admin's name
 const adminUID = global.GoatBot.config.DEV; // Replace with your admin's UID
-const adminLink = "https://www.facebook.com/4S1F.403"; // Replace with your admin's profile link
+const adminLink = "https://www.facebook.com/AMIN.SHEIKH.01"; // Replace with your admin's profile link
 
 module.exports = {
 config: {
