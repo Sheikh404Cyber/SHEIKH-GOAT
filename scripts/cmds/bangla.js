@@ -6,7 +6,7 @@ module.exports = {
     aliases: ["bl"],
     description: "Convert to bangla ",
     version: "1.2",
-    author: "Amin Sheikh",
+    author: "Evan Vau",
     countDown: 60,
    longDescription: {
       vi: "tạo avatar msg",
@@ -43,5 +43,5 @@ onStart: async ({ api, event, args }) => {
 		var fromLang = (retrieve[2] === retrieve[8][0][0]) ? retrieve[2] : retrieve[8][0][0]
 		message.reply(`English: ${text}\n - Translated ${fromLang} on ${lang}`, event.threadID, event.messageID);
 	});
-}
+    }
 }
