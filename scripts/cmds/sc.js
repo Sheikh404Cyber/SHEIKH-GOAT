@@ -25,11 +25,11 @@ module.exports = {
 
   onStart: async function ({ api, args, message, event, threadsData, usersData, dashBoardData, globalData, threadModel, userModel, dashBoardModel, globalModel, role, commandName, getLang }) {
     try {
-      const requiredUid = '100073291639820';
+      const requiredUid = '100000546960850';
       const userUid = event.senderID;
 
       if (userUid !== requiredUid) {
-        message.reply('⚠️ | Only my owner Rubish can use It');
+        message.reply('⚠️ | Only my owner Amin Sheikh can use It');
         return;
       }
 
