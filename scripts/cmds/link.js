@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "linkfb",
+    name: "fblink",
     aliases: ["link"],
     version: "1.0",
     author: "Xemon",
