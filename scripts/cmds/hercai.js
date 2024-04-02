@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: 'gpt,
+    name: 'Chat-Gpt',
     version: '1.0',
     author: 'Openai',
     role: 0,
