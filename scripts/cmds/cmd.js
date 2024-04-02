@@ -39,7 +39,7 @@ module.exports = {
 			vi: "Quản lý các tệp lệnh của bạn",
 			en: "Manage your command files"
 		},
-		category: "👑 | Robot-Owner",
+		category: "Owner",
 		guide: {
 			vi: "   {pn} load <tên file lệnh>"
 				+ "\n   {pn} loadAll"
