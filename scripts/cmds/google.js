@@ -4,7 +4,7 @@ const fs = require("fs");
 
 module.exports = {
 	config: {
-		name: "unforgivable",
+		name: "google",
 		version: "1.0",
 		author: "Samir",
 		countDown: 5,
