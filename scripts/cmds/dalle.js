@@ -32,9 +32,9 @@ const { getStreamFromURL } = global.utils;
       const prompt = args.join(" ");
       const encodedPrompt = encodeURIComponent(prompt);
       const apiKey = "rubish69";
-      const cookies = ["1WIC5qD_DRlZJlrpj-aF-pw4aA6hfWTA__05tcS3r_b_NBD7ipSHz8Ao7ggyIl3R9MTsdBH9Od8cY1BqSXT0oR8uU-hJ3IbYbPmu3M4eaH6nufOyjkiNE1e0Xy5fnR-XLmISaRdMmaOGJt2eLzGFDNjHwChuH9bxmcuv4G-aTVwpcQvK4tOAe1l8mTe4qI5kYjQ3YtXlJfNVPmmMf8toJ78YgU7Xd3bp9EgMjMWTrL4Y", //ghost
+      const cookies = ["1mKJ_7BktjdJvvIdg9vwc--roaaype5jCUiMns-gn7e6ES52UlCoYJ9hnolPm44wFO3wuL2nKQkx6Kq2Evq5mKFF1ewuIkgau-YqAlfV5W3bzM0BUbU2RDAbAia3z0goRzr1u1g55RamhgLc2qKYcMCv-_X5vmlufpInUT4jLRqccYmMpu20YXsoKcq99XA0wU0w9xLFNtwLv7QOMu5vGaH_NdnOfVtDEkf14WIdij6E", //ghost
 
-"1Jl7Ip5tIdpwQaOor4aBnASwKzLocBG_KrucXBmsv5M0TcNCn8PrEgxwQYCPwWTDlvsChAWrYJNYVdCR8qhfZjqGQSmfzGcaK26n0YllKuTEF25pp6azl9NMPpz_XLL0eMXgqITVsT_quQ2UJMAw-UPYt0sVt5lzMnwCrhLVRiuJOcGC_Khm7MgXRVweV7CBKa2hN8JuSV_JwyY3NjaI3iY0QnWYGGno8Ln3xFBPUlpQ" //mahi
+"", //mahi
 
 ]; 
 
