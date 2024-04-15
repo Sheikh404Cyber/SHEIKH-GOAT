@@ -40,8 +40,8 @@ module.exports = {
       return message.reply(`❌Invalid voice ID. Supported IDs are:\n ${supportedIds.join("\n")}`);
     }
 
-    const apiKey = 'fuck';
-    const apiUrl = `https://for-devs.onrender.com/api1/voice?text=${encodeURIComponent(text)}&voiceid=${voiceId}&apikey=${apiKey}`;
+    const apiKey = 'api1';
+    const apiUrl = `https://for-devs.onrender.com/api/voice?text=${encodeURIComponent(text)}&voiceid=${voiceId}&apikey=${apiKey}`;
 
     try {
       const voiceStream = await getStreamFromURL(apiUrl);
