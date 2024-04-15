@@ -10,7 +10,7 @@ module.exports = {
         countDown: 0,
         role: 0,
         longDescription: "Text to Image",
-        category: "ai",
+        category: "🖼 | Image",
         guide: {
             en: "{pn} prompt --ar [ratio] or reply an image\n\n Example: {pn} 1girl, cute face, masterpiece, best quality --ar 16:9\n[ default 1:1 ]"
         }
