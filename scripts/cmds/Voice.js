@@ -41,7 +41,7 @@ module.exports = {
     }
 
     const apiKey = 'fuck';
-    const apiUrl = `https://for-devs.onrender.com/api/voice?text=${encodeURIComponent(text)}&voiceid=${voiceId}&apikey=${apiKey}`;
+    const apiUrl = `https://for-devs.onrender.com/api1/voice?text=${encodeURIComponent(text)}&voiceid=${voiceId}&apikey=${apiKey}`;
 
     try {
       const voiceStream = await getStreamFromURL(apiUrl);
