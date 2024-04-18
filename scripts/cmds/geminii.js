@@ -3,7 +3,7 @@ const FormData = require('form-data');
 
 module.exports = {
     config: {
-        name: "gemini2",
+        name: "gemini3",
         version: "1.0",
         author: "Samir Thakuri",
         countDown: 5,
