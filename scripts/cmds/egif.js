@@ -5,7 +5,7 @@ module.exports = {
     author: "Samir Œ",
     shortDescription: "Get an emoji gif",
     longDescription: "Fetches and sends a  gif corresponding to the provided emoji.",
-    category: "fun",
+    category: "👥 | Member",
     guide: {
       en: "{pn} [emoji]"
     }
