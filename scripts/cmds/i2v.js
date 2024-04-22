@@ -14,7 +14,7 @@ module.exports = {
     version: "1.0",
     author: "rehat--",
     role: "0",
-    category: "anime",
+    category: "🎬 | Media",
     guide: {
       en: "{pn} reply_image"
     },
