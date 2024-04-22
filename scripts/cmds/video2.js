@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "video2",
+    name: "video",
     version: "1.0",
     role: 0,
     author: "kshitiz",
