@@ -49,8 +49,10 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "𝗦𝗛𝗘𝗜𝗞𝗛-𝗕𝟬𝗧 𝘃𝟯.𝟬 [𝗔𝗠𝗜𝗡 𝗦𝗛𝗘𝗜𝗞𝗛]",
+  "nickNameBot": "🅢🅗🅔🅘🅚🅗-🅡🅞🅑🅞🅣 🅥❸.⓿",
   "prefix": ".",
+  "API": "https://noobs-api.onrender.com", 
+  "rubishapi": "https://rubish-apihub.onrender.com/Rubish", 
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
