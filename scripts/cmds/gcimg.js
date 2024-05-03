@@ -15,13 +15,13 @@ async function getAvatarUrls(userIDs) {
 }
 module.exports = {
     config: {
-        name: "gimg",
+        name: "gcimg",
         version: "1.0",
         credits: "ASIF",
         cooldowns: 5,
         hasPermission: 0,
         description: "𝗚𝗲𝘁 𝗚𝗿𝗼𝘂𝗽 𝗜𝗺𝗮𝗴𝗲",
-        commandCategory: "🖼 | Image",
+        commandCategory: "𝗜𝗠𝗔𝗚𝗘",
         usePrefix: false,
         usages: "{pn} [TID/leave blank] --color [color] --bgcolor [bgcolor] --admincolor [admincolor] --membercolor [membercolor]",
         argsRequired: false
