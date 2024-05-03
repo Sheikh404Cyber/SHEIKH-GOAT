@@ -21,7 +21,7 @@ module.exports = {
         cooldowns: 5,
         hasPermission: 0,
         description: "𝗚𝗲𝘁 𝗚𝗿𝗼𝘂𝗽 𝗜𝗺𝗮𝗴𝗲",
-        commandCategory: "𝗜𝗠𝗔𝗚𝗘",
+        Category: "🖼 | Image",
         usePrefix: false,
         usages: "{pn} [TID/leave blank] --color [color] --bgcolor [bgcolor] --admincolor [admincolor] --membercolor [membercolor]",
         argsRequired: false
