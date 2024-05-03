@@ -14,18 +14,17 @@ async function getAvatarUrls(userIDs) {
   }
 }
 module.exports = {
-    config: {
-        name: "gcimg",
-        version: "1.0",
-        credits: "ASIF",
-        cooldowns: 5,
-        hasPermission: 0,
-        description: "𝗚𝗲𝘁 𝗚𝗿𝗼𝘂𝗽 𝗜𝗺𝗮𝗴𝗲",
-        Category: "🖼 | Image",
-        usePrefix: false,
-        usages: "{pn} [TID/leave blank] --color [color] --bgcolor [bgcolor] --admincolor [admincolor] --membercolor [membercolor]",
-        argsRequired: false
-    },
+  config: {
+    name: "gimg ",
+    version: "1.0",
+    author: "dipto",
+    countDown: 20,
+    role: 0,
+    shortDescription: "group img",
+    longDescription: "group img make",
+    category: "🖼 | Image",
+    guide: "{pn}",
+  },
 
 onStart: async function ({ api, args, event }) {
         try {
