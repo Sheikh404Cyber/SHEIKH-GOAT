@@ -1,4 +1,4 @@
- const axios = require('axios');
+const axios = require('axios');
 const { getStreamFromURL } = global.utils;
 const rubishapi = global.GoatBot.config.rubishapi;
 
@@ -19,7 +19,7 @@ const rubishapi = global.GoatBot.config.rubishapi;
       guide: {
         en: "{pn} 'prompt' ",
       },
-      category: "AI",
+      category: "🖼 | Image",
     },
   
 
@@ -36,7 +36,7 @@ const rubishapi = global.GoatBot.config.rubishapi;
       const cookies = [
         "1CFjZEG3PLy9ByYhKMJWAGso5-3iYd7jj_xbObxFfnd6haHprXsI-Xcle0QnreR3VpNh9esqiuQxNa8SVp1GYYiV0mfH9IeI9fnWvBGbAtKvd1sYkcZ4n6BDEnnPbnyMEMPV1GNNLdFBsTcj3wDuyQgsVHX15Djr2iGyqszQwOTDS--atcwZKOGK15IXayA-5IOmA8mSCrlPVcMx1L4zXsA",
                        "1oYqh4jobg6uWVy0gQoFofdBJvot1fDU3Du9eLaI95sY3x3btJYOvCLxQP_i4rpx7fwMe-VJaxsEdCmFLj8uISBb4oNGaOe6QdHg4C44nNtqnfOzgMwYXyKgNulScaokTj5fNu-37ZetATMi2zpJz-NjAD4Fy6BGVkhQ530FKjAi77C3ihMpcUTVYHCON9kH1IMT41Id5xvc3dTdQBmgSlw",
-                       "1TTzmloxcxAbj1pWCQ7-BDDf8zhlo_OkY3H1J2WSn8CSnbwir14uZOf4SlNBu1PGvUiiWvGSOJFaEi7NezZfbTs2C347fWM-2KJ6ie1yndkX8VC6m7NLnfjyzR2wB7g0p_1IyYymBGyKKmR4ocVjByq4l-AUGV_JyuB_9vE-OB90mkvEvzswrgH7Wbzr5Qc6a4i3Ez0ZBkhl9y_Bg_-72LQ",  
+                       "1TTzmloxcxAbj1pWCQ7-BDDf8zhlo_OkY3H1J2WSn8CSnbwir14uZOf4SlNBu1PGvUiiWvGSOJFaEi7NezZfbTs2C347fWM-2KJ6ie1yndkX8VC6m7NLnfjyzR2wB7g0p_1IyYymBGyKKmR4ocVjByq4l-AUGV_JyuB_9vE-OB90mkvEvzswrgH7Wbzr5Qc6a4i3Ez0ZBkhl9y_Bg_-72LQ",
 ]; 
 
       const randomCookie = cookies[Math.floor(Math.random() * cookies.length)];
@@ -101,4 +101,11 @@ Processing Time: ${processingTimeInSeconds}s`,
         } else if (error.response.status === 404) {
           await message.reply("⚠️ | The DALL·E-3 API endpoint was not found. Please check the API URL.");
         } else {
-          await message.reply(`⚠️ | Rubish DALL·E-3 server busy now\n\nPlease try again later`); 
+          await message.reply(`⚠️ | Rubish DALL·E-3 server busy now\n\nPlease try again later`);
+        }
+      } else {
+        await message.reply("⚠️ | An unexpected error occurred. Please try again later.");
+      }
+    }
+  }
+};
