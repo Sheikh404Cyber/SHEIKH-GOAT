@@ -1,6 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+const rubishapi = global.GoatBot.config.rubishapi;
 
 module.exports = {
   config: {
@@ -9,7 +10,7 @@ module.exports = {
     author: "RUBISH",
     countDown: 0,
     role: 0,
-    category: "👥 | Member",
+    category: "Entertainment",
     guide: "{p}caption [love, islamic, funny, birthday, sad]",
   },
 
@@ -27,7 +28,7 @@ module.exports = {
     const category = args[0] && captionCategories.includes(args[0].toLowerCase()) ? args[0].toLowerCase() : captionCategories[Math.floor(Math.random() * captionCategories.length)];
 
     try {
-      let response = await axios.get(`https://caption-rubish-api.onrender.com/random_caption/${category}?apikey=rubish69`);
+      let response = await axios.get(`${rubishapi}/caption?category=${category}&apikey=rubish69`);
       let captionMsg = {
         body: response.data.caption,
       };
@@ -39,4 +40,4 @@ module.exports = {
       api.sendMessage(errorMsg, threadID);
     }
   },
-};
+}; 
