@@ -1,58 +1,62 @@
 const axios = require("axios");
-
-module.exports.config = {
-  name: "gemini",
-  version: "1.0.0",
-  role: 0, 
-  author: "dipto", 
-  description: "gemini ai with multiple conversation",
-  usePrefix: true,
-  guide: "[message]",
-  category: "📖 | Education",
-  coolDowns: 5,
+const baseApiUrl = async () => {
+  const base = await axios.get(
+    `https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json`,
+  );
+  return base.data.api;
 };
-module.exports.onReply = async function ({ api, event, Reply}) {
- //api.unsendMessage(Reply.messageID);
-  const { author } = Reply;
-  if(author != event.senderID)
-  return;
-  const uid = event.senderID
-  if (event.type == "message_reply") {
-  const reply = event.body.toLowerCase();;
-  if (isNaN(reply)) {
-    const response = await axios.get(`https://noobs-api.onrender.com/dipto/gemini2?text=${encodeURIComponent(reply)}&senderID=${uid}`)
-       const ok = response.data.response;
-    await api.sendMessage(ok ,event.threadID,(error, info) => {
-  global.GoatBot.onReply.set(info.messageID,{
-        commandName: this.config.name,
-        type: 'reply',
-    messageID: info.messageID,
-    author: event.senderID,
-    link: ok
-  })},event.messageID)
-  }
-  }
-}
-module.exports.onStart = async function ({ api, args, event }) {
- const uid = event.senderID
-  try {
-    const dipto = args.join(" ").toLowerCase();
-    if (!args[0]) {
-      api.sendMessage(
-        "Please provide a question to answer\n\nExample:\ngemini2 hey",
-  event.threadID,  event.messageID ); return;}
-    if (dipto) {
-      const response = await axios.get(`https://noobs-api.onrender.com/dipto/gemini2?text=${encodeURIComponent(dipto)}&senderID=${uid}`);
-         const mg = response.data.response;
-      await api.sendMessage({body: mg ,},event.threadID,(error, info) => {
-  global.GoatBot.onReply.set(info.messageID,{
-        commandName: this.config.name,
-    type: 'reply',
-    messageID: info.messageID,
-    author: event.senderID,
-    link: mg
-  })},event.messageID);
+
+module.exports = {
+  config: {
+    name: "gemini",
+    version: "1.0",
+    author: "Dipto",
+    description: "gemeini ai",
+    countDown: 5,
+    role: 0,
+    category: "google",
+    guide: {
+      en: "{pn} message | photo reply",
+    },
+  },
+  onStart: async ({ api, args, event }) => {
+    const prompt = args.join(" ");
+    //---- Image Reply -----//
+    if (event.type === "message_reply") {
+      var t = event.messageReply.attachments[0].url;
+      try {
+        const response = await axios.get(
+          `${await baseApiUrl()}/gemini?prompt=${encodeURIComponent(prompt)}&url=${encodeURIComponent(t)}`,
+        );
+        const data2 = response.data.dipto;
+        api.sendMessage(data2, event.threadID, event.messageID);
+      } catch (error) {
+        console.error("Error:", error.message);
+        api.sendMessage(error, event.threadID, event.messageID);
+      }
     }
-  } catch (error) {console.error(`Failed to get an answer: ${error.message}`);
-api.sendMessage(`${error.message}.\nAn error`,event.threadID,event.messageID);}
+    //---------- Message Reply ---------//
+    else if (!prompt) {
+      return api.sendMessage(
+        "Please provide a prompt or message reply",
+        event.threadID,
+        event.messageID,
+      );
+    } else {
+      try {
+        const respons = await axios.get(
+          `${await baseApiUrl()}/gemini?prompt=${encodeURIComponent(prompt)}`,
+        );
+        const message = respons.data.dipto;
+        api.sendMessage(message, event.threadID, event.messageID);
+      } catch (error) {
+        console.error("Error calling Gemini AI:", error);
+        api.sendMessage(
+          `Sorry, there was an error processing your request.${error}`,
+          event.threadID,
+          event.messageID,
+        );
+      }
+    }
+  },
 };
