@@ -26,7 +26,7 @@ const rubishapi = global.GoatBot.config.rubishapi;
   onStart: async function ({ message, args }) {
     try {
       if (args.length === 0) {
-        await message.reply("⚠️ | Please provide a prompt\n\nExample ► .dalle2 A beautiful Girl");
+        await message.reply("⚠️ | Please provide a prompt\n\nExample ► .bing A beautiful Girl");
         return;
       }
 
@@ -34,9 +34,8 @@ const rubishapi = global.GoatBot.config.rubishapi;
       const encodedPrompt = encodeURIComponent(prompt);
       const apiKey = "rubish69";
       const cookies = [
-        "1CFjZEG3PLy9ByYhKMJWAGso5-3iYd7jj_xbObxFfnd6haHprXsI-Xcle0QnreR3VpNh9esqiuQxNa8SVp1GYYiV0mfH9IeI9fnWvBGbAtKvd1sYkcZ4n6BDEnnPbnyMEMPV1GNNLdFBsTcj3wDuyQgsVHX15Djr2iGyqszQwOTDS--atcwZKOGK15IXayA-5IOmA8mSCrlPVcMx1L4zXsA",
-                       "1oYqh4jobg6uWVy0gQoFofdBJvot1fDU3Du9eLaI95sY3x3btJYOvCLxQP_i4rpx7fwMe-VJaxsEdCmFLj8uISBb4oNGaOe6QdHg4C44nNtqnfOzgMwYXyKgNulScaokTj5fNu-37ZetATMi2zpJz-NjAD4Fy6BGVkhQ530FKjAi77C3ihMpcUTVYHCON9kH1IMT41Id5xvc3dTdQBmgSlw",
-                       "1TTzmloxcxAbj1pWCQ7-BDDf8zhlo_OkY3H1J2WSn8CSnbwir14uZOf4SlNBu1PGvUiiWvGSOJFaEi7NezZfbTs2C347fWM-2KJ6ie1yndkX8VC6m7NLnfjyzR2wB7g0p_1IyYymBGyKKmR4ocVjByq4l-AUGV_JyuB_9vE-OB90mkvEvzswrgH7Wbzr5Qc6a4i3Ez0ZBkhl9y_Bg_-72LQ",
+        "1314y6Qnpwhz8NX3lMXiDM6lXGvnLTIab07tYvD-d2qXxD8rbXLPL7juGCF4_e6ePtL6B6fbqJrj4M-jpiUKkq2HPxCz7hIkxoHlhSR93m1kNyoMoa8QZ0Lg6egcT1_1l9McbvvqFFlq4lamIyEE1tb62buHc2zBYep2CX66FlFGzmrm-DaRrPqt6ygNTljRcqJif-Tys6_Fa8VmKYFlQxMYWrHC_bdiDEARrYq7BL3E",
+                       "1n5xSS1EI59fN4mD48mE1wrpNHzABwHi3PW8SwoPNemfjfjGczpoeYO8SVWlzkAr_x8_jZ755ncAeh5dcrmeHlMPEKVwUYOqAkSrojSnvGjCrzDGX7BB3m3xYjMVWtlMvM7NQqJyxyvCASDMU6Ccm6f3DoQ83BtN2y-gldKI3d3sEPEv64778tXZqEFKigdERTH7jEq-BWoeB7ohpUWxsM1hMRxkWmbY5vrtt17Qpdzo",
 ]; 
 
       const randomCookie = cookies[Math.floor(Math.random() * cookies.length)];
@@ -89,7 +88,7 @@ Processing Time: ${processingTimeInSeconds}s`,
       console.error(error);
 
       if (error.response && error.response.status === 401) {
-        await message.reply("⚠️ | Unauthorized your API key \n\nContact with Rubish for a new apikey");
+        await message.reply("⚠️ | Unauthorized your API key \n\nContact with AMIN SHEIKH for a new apikey");
       } else if (error.response && error.response.data) {
         const responseData = error.response.data;
 
@@ -99,9 +98,9 @@ Processing Time: ${processingTimeInSeconds}s`,
           const errorMessages = Object.entries(responseData).map(([key, value]) => `${key}: ${value}`).join('\n');
           await message.reply(`⚠️ | Server error details:\n\n${errorMessages}`);
         } else if (error.response.status === 404) {
-          await message.reply("⚠️ | The DALL·E-3 API endpoint was not found. Please check the API URL.");
+          await message.reply("⚠️ | The Bing API endpoint was not found. Please check the API URL.");
         } else {
-          await message.reply(`⚠️ | Rubish DALL·E-3 server busy now\n\nPlease try again later`);
+          await message.reply(`⚠️ | Sheikh Bing server busy now\n\nPlease try again later`);
         }
       } else {
         await message.reply("⚠️ | An unexpected error occurred. Please try again later.");
